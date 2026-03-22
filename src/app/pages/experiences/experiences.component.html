@@ -1,0 +1,11 @@
+<div class="section-shell fade-up">
+  <h2 class="section-title">Experience</h2>
+  <p class="section-sub">Product and platform work delivered across multiple stacks.</p>
+
+  <div class="cards-grid">
+    <app-experience-card
+      *ngFor="let experience of experiences"
+      [experience]="experience"
+    ></app-experience-card>
+  </div>
+</div>

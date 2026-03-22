@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "minalu"
+  },
+  "targets": {
+    "minalu": {
+      "hosting": {
+        "site": [
+          "minalu"
+        ]
+      }
+    }
+  }
+}

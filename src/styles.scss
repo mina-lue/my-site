@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --bg-base: #081228;
+  --bg-soft: #0f1c38;
+  --bg-card: #14274c;
+  --line: rgba(165, 186, 255, 0.2);
+  --text-main: #eef4ff;
+  --text-muted: #b4c3e7;
+  --brand: #ff9f43;
+  --brand-soft: #ffc27a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
+  color: var(--text-main);
+  background:
+    radial-gradient(1200px 500px at 12% -5%, rgba(255, 159, 67, 0.28), transparent 62%),
+    radial-gradient(900px 450px at 100% 15%, rgba(95, 141, 255, 0.2), transparent 58%),
+    linear-gradient(180deg, #09152d 0%, #050a17 55%, #04070f 100%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+}
+
+.site-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-shell {
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+}
+
+.section-block {
+  margin-top: 3.5rem;
+}
+
+.glass-card {
+  border: 1px solid var(--line);
+  background: linear-gradient(165deg, rgba(30, 53, 99, 0.82), rgba(12, 24, 49, 0.8));
+  backdrop-filter: blur(8px);
+  box-shadow: 0 28px 50px rgba(1, 7, 20, 0.45);
+  border-radius: 1.25rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(1.4rem, 1.05rem + 1.2vw, 2rem);
+  margin-bottom: 1rem;
+  color: var(--brand-soft);
+}
+
+.fade-up {
+  animation: fadeUp 520ms ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

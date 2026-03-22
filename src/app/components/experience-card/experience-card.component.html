@@ -1,0 +1,13 @@
+<article class="glass-card experience-card">
+  <div class="experience-head">
+    <p class="duration">{{ experience?.duration }}</p>
+    <h3>{{ experience?.title }}</h3>
+    <p class="company">{{ experience?.company }}</p>
+  </div>
+
+  <p class="description">{{ experience?.description }}</p>
+
+  <div class="tech-list">
+    <span *ngFor="let tech of experience?.technologies">{{ tech }}</span>
+  </div>
+</article>

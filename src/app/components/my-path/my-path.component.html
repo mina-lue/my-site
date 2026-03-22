@@ -1,0 +1,13 @@
+<div class="section-shell fade-up">
+  <h2 class="section-title">My Programming Journey</h2>
+
+  <div class="journey-grid">
+    <article class="journey-item glass-card" *ngFor="let item of path">
+      <p class="year">{{ item.year }}</p>
+      <h3>{{ item.title }}</h3>
+      <ul>
+        <li *ngFor="let i of item.items">{{ i }}</li>
+      </ul>
+    </article>
+  </div>
+</div>

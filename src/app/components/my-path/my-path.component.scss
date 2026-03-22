@@ -1,0 +1,43 @@
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.journey-item {
+  padding: 0.95rem;
+}
+
+.year {
+  margin: 0;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: var(--brand-soft);
+  font-weight: 700;
+}
+
+.journey-item h3 {
+  margin: 0.42rem 0;
+  font-size: 1.02rem;
+  color: #ffeed5;
+}
+
+.journey-item ul {
+  margin: 0.45rem 0 0;
+  padding-left: 1rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+@media (min-width: 720px) {
+  .journey-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1080px) {
+  .journey-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

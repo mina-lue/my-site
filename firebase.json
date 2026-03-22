@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "minalu",
+    "public": "dist/my-site/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

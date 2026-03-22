@@ -1,0 +1,45 @@
+.experience-card {
+  padding: 1rem;
+}
+
+.duration {
+  margin: 0;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--brand-soft);
+  font-weight: 700;
+}
+
+.experience-head h3 {
+  margin: 0.45rem 0 0;
+  color: #fff2dc;
+  font-size: 1.1rem;
+}
+
+.company {
+  margin: 0.28rem 0 0;
+  color: #cad9fb;
+  font-size: 0.9rem;
+}
+
+.description {
+  margin: 0.9rem 0;
+  color: var(--text-muted);
+  line-height: 1.62;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.tech-list span {
+  font-size: 0.8rem;
+  border-radius: 999px;
+  padding: 0.28rem 0.6rem;
+  border: 1px solid var(--line);
+  background: rgba(127, 160, 255, 0.1);
+  color: #dce9ff;
+}
