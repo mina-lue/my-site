@@ -6,6 +6,8 @@
 
 .service-card {
   padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card h3 {
@@ -18,6 +20,24 @@
   margin: 0.65rem 0 0;
   color: var(--text-muted);
   line-height: 1.65;
+}
+
+.service-request-btn {
+  display: inline-flex;
+  align-self: center;
+  margin-top: 0.85rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.7rem;
+  border: 1px solid rgba(255, 201, 140, 0.5);
+  color: #ffe9c8;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.service-request-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 201, 140, 0.9);
 }
 
 @media (min-width: 860px) {

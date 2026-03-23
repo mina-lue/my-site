@@ -1,13 +1,54 @@
-<div class="section-shell fade-up">
-  <h2 class="section-title">My Programming Journey</h2>
+﻿<div class="section-shell journey-section fade-up">
+  <h2 class="section-title">Programming Journey</h2>
+  <p class="journey-subtitle">A timeline of skills, milestones, and growing engineering responsibility.</p>
 
-  <div class="journey-grid">
-    <article class="journey-item glass-card" *ngFor="let item of path">
-      <p class="year">{{ item.year }}</p>
+  <div class="journey-overview glass-card">
+    <div>
+      <p class="overview-label">Start</p>
+      <p class="overview-value">{{ startYear }}</p>
+    </div>
+    <div>
+      <p class="overview-label">Current Milestone</p>
+      <p class="overview-value">{{ endYear }}</p>
+    </div>
+    <div>
+      <p class="overview-label">Journey Span</p>
+      <p class="overview-value">{{ spanYears }} years</p>
+    </div>
+    <div>
+      <p class="overview-label">Milestones</p>
+      <p class="overview-value">{{ path.length }}</p>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    class="timeline-toggle glass-card"
+    (click)="toggleTimeline()"
+    [attr.aria-expanded]="isTimelineExpanded"
+  >
+    <span>{{ isTimelineExpanded ? 'Hide Timeline' : 'View Timeline' }}</span>
+    <span class="toggle-icon" [class.expanded]="isTimelineExpanded" aria-hidden="true">▾</span>
+  </button>
+
+  <div class="timeline" *ngIf="isTimelineExpanded">
+    <article class="timeline-item glass-card" *ngFor="let item of path; let i = index">
+      <span class="timeline-dot" aria-hidden="true"></span>
+
+      <div class="item-header">
+        <p class="year">{{ item.year }}</p>
+        <p class="progress-value">{{ getProgress(i) }}%</p>
+      </div>
+
       <h3>{{ item.title }}</h3>
+
       <ul>
-        <li *ngFor="let i of item.items">{{ i }}</li>
+        <li *ngFor="let detail of item.items">{{ detail }}</li>
       </ul>
+
+      <div class="progress-track" aria-hidden="true">
+        <span [style.width.%]="getProgress(i)"></span>
+      </div>
     </article>
   </div>
 </div>
