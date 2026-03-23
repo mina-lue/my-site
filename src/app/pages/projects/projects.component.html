@@ -1,8 +1,50 @@
 <div class="section-shell fade-up">
+  <button type="button" class="back-link" (click)="goBack()" *ngIf="!previewMode">← Back</button>
   <h2 class="section-title">Portfolio</h2>
-  <p class="section-sub">Selected work across web, mobile, and operations tooling.</p>
+  <p class="section-sub" *ngIf="previewMode">Selected highlights. Open the full Portfolio page for all works.</p>
+  <p class="section-sub" *ngIf="!previewMode">Browse all work with category and technology filters.</p>
+
+  <div class="filters-wrap glass-card" *ngIf="!previewMode">
+    <div class="filter-group">
+      <p class="filter-label">Category</p>
+      <div class="filter-list">
+        <button
+          type="button"
+          *ngFor="let option of categoryFilters"
+          [class.active]="selectedCategory === option.value"
+          (click)="setCategoryFilter(option.value)"
+        >
+          {{ option.label }}
+        </button>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <p class="filter-label">Tech Stack</p>
+      <div class="filter-list">
+        <button
+          type="button"
+          *ngFor="let tech of technologyFilters"
+          [class.active]="selectedTechnology === tech"
+          (click)="setTechnologyFilter(tech)"
+        >
+          {{ tech === 'all' ? 'All Tech' : tech }}
+        </button>
+      </div>
+    </div>
+  </div>
 
   <div class="cards-grid">
-    <app-project-card *ngFor="let item of projects" [project]="item"></app-project-card>
+    <app-project-card *ngFor="let item of visibleProjects" [project]="item"></app-project-card>
+  </div>
+
+  <p class="empty-state" *ngIf="!visibleProjects.length && !previewMode">No projects match the selected filters yet.</p>
+
+  <div class="load-more-wrap" *ngIf="hasMoreProjects && !previewMode">
+    <button type="button" class="load-more-btn" (click)="loadMore()">Load more</button>
+  </div>
+
+  <div class="portfolio-page-cta" *ngIf="previewMode">
+    <a routerLink="/portfolio">See more</a>
   </div>
 </div>

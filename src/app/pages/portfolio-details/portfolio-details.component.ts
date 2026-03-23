@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { PORTFOLIO_ITEMS } from '../../data/portfolio-items';
 import { Project } from '../../model/Project';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-portfolio-details',
@@ -25,7 +26,11 @@ export class PortfolioDetailsComponent implements OnInit {
     'Workflow Automation': 'https://cdn.simpleicons.org/n8n/EA4B71'
   };
 
-  constructor(private readonly route: ActivatedRoute) {}
+  constructor(
+    private readonly route: ActivatedRoute,
+    private readonly location: Location,
+    private readonly router: Router
+  ) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
@@ -36,5 +41,14 @@ export class PortfolioDetailsComponent implements OnInit {
 
   getTechnologyLogo(technology: string): string {
     return this.techLogos[technology] ?? 'https://cdn.simpleicons.org/devbox/9AA4B2';
+  }
+
+  goBack(): void {
+    if (typeof window !== 'undefined' && window.history.length > 1) {
+      this.location.back();
+      return;
+    }
+
+    this.router.navigateByUrl('/portfolio');
   }
 }

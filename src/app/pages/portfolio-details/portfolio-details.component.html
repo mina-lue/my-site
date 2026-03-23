@@ -1,5 +1,5 @@
 <section class="section-shell portfolio-details fade-up" *ngIf="project; else notFound">
-  <a class="back-link" routerLink="/" fragment="portfolio">← Back to Portfolio</a>
+  <button type="button" class="back-link" (click)="goBack()">← Back</button>
 
   <div class="hero glass-card">
     <img [src]="project.imageUrl" [alt]="project.title + ' preview'" />
@@ -38,7 +38,7 @@
     <div class="glass-card not-found">
       <h1>Portfolio item not found</h1>
       <p>The selected work item does not exist or has been moved.</p>
-      <a routerLink="/" fragment="portfolio">Return to Portfolio</a>
+      <a routerLink="/portfolio">Return to Portfolio</a>
     </div>
   </section>
 </ng-template>

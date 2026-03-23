@@ -4,6 +4,7 @@ export const PORTFOLIO_ITEMS: Project[] = [
   {
     slug: 'inventory-management',
     title: 'Inventory Management',
+    category: 'commercial',
     description: 'App for managing store and employees.',
     imageUrl: 'habkali-inventory-homepage.png',
     overview: 'A full-stack inventory platform to manage products, stock movement, and employee operations.',
@@ -19,6 +20,7 @@ export const PORTFOLIO_ITEMS: Project[] = [
   {
     slug: 'coffee-ordering-platform',
     title: 'Coffee Ordering Platform',
+    category: 'fun',
     description: 'Ordering flow, menu catalog, and customer checkout built for speed and usability.',
     imageUrl: 'my-foot-bg.jpg',
     overview: 'A digital ordering platform for coffee shops with product browsing and a smooth checkout flow.',
@@ -34,6 +36,7 @@ export const PORTFOLIO_ITEMS: Project[] = [
   {
     slug: 'school-system',
     title: 'School System',
+    category: 'commercial',
     description: 'Full school management system for teachers, admins, students, and parents.',
     imageUrl: 'yellow_me.png',
     overview: 'A centralized school platform for academic, administrative, and communication workflows.',
@@ -49,6 +52,7 @@ export const PORTFOLIO_ITEMS: Project[] = [
   {
     slug: 'issue-tracking-dashboard',
     title: 'Issue Tracking Dashboard',
+    category: 'learning',
     description: 'Tooling for issue lifecycle tracking, resolution metrics, and team visibility.',
     imageUrl: 'my-foot-bg.jpg',
     overview: 'An operations dashboard for tracking defects, ownership, and progress across teams.',

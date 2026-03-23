@@ -1,10 +1,17 @@
+.site-shell {
+  padding-top: 4.9rem;
+}
+
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 40;
   border-bottom: 1px solid rgba(173, 194, 255, 0.15);
   background: rgba(7, 14, 32, 0.78);
   backdrop-filter: blur(12px);
+  transition: transform 220ms ease;
 }
 
 .nav-wrap {
@@ -31,7 +38,7 @@
 .nav-links {
   display: flex;
   gap: 1.25rem;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 .nav-links a {
@@ -58,14 +65,38 @@
 }
 
 @media (max-width: 720px) {
+  .site-shell {
+    padding-top: 4.9rem;
+  }
+
   .nav-wrap {
-    min-height: 4.9rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-block: 0.65rem;
+    min-height: 4.25rem;
+    flex-wrap: nowrap;
+    gap: 0.7rem;
   }
 
   .nav-links {
-    justify-content: center;
+    flex: 1;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 0.7rem;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .contact-cta {
+    display: none;
+  }
+
+  .site-header.mobile-hidden {
+    transform: translateY(-110%);
   }
 }
