@@ -6,6 +6,9 @@
   <div class="copy-wrap">
     <h3>{{ project?.title }}</h3>
     <p>{{ project?.description }}</p>
-    <a *ngIf="project?.link" [href]="project?.link" target="_blank" rel="noopener noreferrer">View details</a>
+    <div class="card-actions" *ngIf="project">
+      <a [routerLink]="['/portfolio', project.slug]">View details</a>
+      <a *ngIf="project.link" [href]="project.link" target="_blank" rel="noopener noreferrer">Live preview</a>
+    </div>
   </div>
 </article>

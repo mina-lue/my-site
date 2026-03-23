@@ -1,0 +1,44 @@
+<section class="section-shell portfolio-details fade-up" *ngIf="project; else notFound">
+  <a class="back-link" routerLink="/" fragment="portfolio">← Back to Portfolio</a>
+
+  <div class="hero glass-card">
+    <img [src]="project.imageUrl" [alt]="project.title + ' preview'" />
+    <div class="hero-copy">
+      <p class="year" *ngIf="project.year">{{ project.year }}</p>
+      <h1>{{ project.title }}</h1>
+      <p>{{ project.overview || project.description }}</p>
+      <a *ngIf="project.link" [href]="project.link" target="_blank" rel="noopener noreferrer">Open live preview</a>
+    </div>
+  </div>
+
+  <div class="details-grid">
+    <article class="glass-card detail-card">
+      <h2>Highlights</h2>
+      <ul>
+        <li *ngFor="let item of project.highlights || []">{{ item }}</li>
+      </ul>
+    </article>
+
+    <article class="glass-card detail-card">
+      <h2>Tech Stack</h2>
+      <ul>
+        <li *ngFor="let tech of project.technologies || []" class="tech-item">
+          <span class="tech-icon" aria-hidden="true">
+            <img [src]="getTechnologyLogo(tech)" [alt]="tech + ' logo'" loading="lazy" />
+          </span>
+          <span>{{ tech }}</span>
+        </li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<ng-template #notFound>
+  <section class="section-shell portfolio-details fade-up">
+    <div class="glass-card not-found">
+      <h1>Portfolio item not found</h1>
+      <p>The selected work item does not exist or has been moved.</p>
+      <a routerLink="/" fragment="portfolio">Return to Portfolio</a>
+    </div>
+  </section>
+</ng-template>
