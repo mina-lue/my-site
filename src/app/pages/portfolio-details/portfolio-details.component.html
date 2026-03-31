@@ -1,5 +1,5 @@
 <section class="section-shell portfolio-details fade-up" *ngIf="project; else notFound">
-  <button type="button" class="back-link" (click)="goBack()">← Back</button>
+  <button type="button" class="back-link" (click)="goBack()">&#8592; Back</button>
 
   <div class="hero glass-card">
     <img [src]="project.imageUrl" [alt]="project.title + ' preview'" />
@@ -13,21 +13,62 @@
 
   <div class="details-grid">
     <article class="glass-card detail-card">
+      <h2>Problem & Approach</h2>
+      <p class="detail-copy">{{ project.problemStatement || project.description }}</p>
+      <p class="detail-copy" *ngIf="project.solutionApproach">{{ project.solutionApproach }}</p>
+    </article>
+
+    <article class="glass-card detail-card">
       <h2>Highlights</h2>
       <ul>
         <li *ngFor="let item of project.highlights || []">{{ item }}</li>
       </ul>
     </article>
+  </div>
 
-    <article class="glass-card detail-card">
-      <h2>Tech Stack</h2>
+  <article class="glass-card detail-card" *ngIf="project.stackByLayer?.length">
+    <h2>Stack by Layer</h2>
+    <div class="layer-grid">
+      <div class="layer-card" *ngFor="let layer of project.stackByLayer">
+        <p class="layer-title">{{ layer.layer }}</p>
+        <div class="layer-tools">
+          <span *ngFor="let tool of layer.tools">{{ tool }}</span>
+        </div>
+        <p class="layer-why" *ngIf="layer.why">{{ layer.why }}</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="glass-card detail-card" *ngIf="project.flowSteps?.length">
+    <h2>Solution Flow</h2>
+    <div class="flow-list">
+      <div class="flow-step" *ngFor="let flow of project.flowSteps; let i = index">
+        <p class="step-index">Step {{ i + 1 }}</p>
+        <h3>{{ flow.step }}</h3>
+        <p>{{ flow.detail }}</p>
+      </div>
+    </div>
+  </article>
+
+  <div class="details-grid details-grid--triple">
+    <article class="glass-card detail-card" *ngIf="project.impactPoints?.length">
+      <h2>Impact</h2>
       <ul>
-        <li *ngFor="let tech of project.technologies || []" class="tech-item">
-          <span class="tech-icon" aria-hidden="true">
-            <img [src]="getTechnologyLogo(tech)" [alt]="tech + ' logo'" loading="lazy" />
-          </span>
-          <span>{{ tech }}</span>
-        </li>
+        <li *ngFor="let point of project.impactPoints">{{ point }}</li>
+      </ul>
+    </article>
+
+    <article class="glass-card detail-card" *ngIf="project.roleOwnership?.length">
+      <h2>My Role</h2>
+      <ul>
+        <li *ngFor="let item of project.roleOwnership">{{ item }}</li>
+      </ul>
+    </article>
+
+    <article class="glass-card detail-card" *ngIf="project.tradeoffs?.length">
+      <h2>Tradeoffs & Next Iteration</h2>
+      <ul>
+        <li *ngFor="let item of project.tradeoffs">{{ item }}</li>
       </ul>
     </article>
   </div>

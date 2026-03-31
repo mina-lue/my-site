@@ -48,6 +48,16 @@
   line-height: 1.6;
 }
 
+.problem-line {
+  margin-top: 0.6rem;
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.problem-line strong {
+  color: #ffe2d7;
+}
+
 .tech-row {
   display: flex;
   flex-wrap: wrap;
