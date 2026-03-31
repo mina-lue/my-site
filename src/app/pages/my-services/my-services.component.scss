@@ -39,6 +39,10 @@
   transition: transform 180ms ease, border-color 180ms ease;
 }
 
+.service-card .service-request-btn {
+  align-self: center;
+}
+
 .service-request-btn:hover {
   transform: translateY(-1px);
   border-color: rgba(255, 160, 134, 0.88);
