@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg-base: #081228;
-  --bg-soft: #0f1c38;
-  --bg-card: #14274c;
-  --line: rgba(165, 186, 255, 0.2);
-  --text-main: #eef4ff;
-  --text-muted: #b4c3e7;
-  --brand: #ff9f43;
-  --brand-soft: #ffc27a;
+  --bg-base: #07151c;
+  --bg-soft: #0d2530;
+  --bg-card: #14313f;
+  --bg-card-soft: #163848;
+  --line: rgba(153, 205, 218, 0.28);
+  --line-strong: rgba(255, 132, 92, 0.42);
+  --text-main: #f3f9fb;
+  --text-muted: #acc5cf;
+  --brand: #ff845c;
+  --brand-soft: #ffc3ad;
+  --accent: #5ad7cf;
 }
 
 * {
@@ -23,19 +26,19 @@ body {
 }
 
 body {
-  font-family: 'Manrope', 'Segoe UI', sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
   color: var(--text-main);
   background:
-    radial-gradient(1200px 500px at 12% -5%, rgba(255, 159, 67, 0.28), transparent 62%),
-    radial-gradient(900px 450px at 100% 15%, rgba(95, 141, 255, 0.2), transparent 58%),
-    linear-gradient(180deg, #09152d 0%, #050a17 55%, #04070f 100%);
+    radial-gradient(1100px 560px at 8% -6%, rgba(255, 132, 92, 0.27), transparent 60%),
+    radial-gradient(980px 480px at 100% 12%, rgba(90, 215, 207, 0.19), transparent 58%),
+    linear-gradient(180deg, #08161f 0%, #061019 58%, #040a10 100%);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+  font-family: 'Sora', 'Segoe UI', sans-serif;
   letter-spacing: -0.02em;
 }
 
@@ -49,25 +52,25 @@ a {
 }
 
 .section-shell {
-  width: min(1120px, 92vw);
+  width: min(1160px, 92vw);
   margin: 0 auto;
 }
 
 .section-block {
-  margin-top: 3.5rem;
+  margin-top: 4rem;
 }
 
 .glass-card {
   border: 1px solid var(--line);
-  background: linear-gradient(165deg, rgba(30, 53, 99, 0.82), rgba(12, 24, 49, 0.8));
+  background: linear-gradient(165deg, rgba(22, 58, 74, 0.86), rgba(10, 26, 35, 0.88));
   backdrop-filter: blur(8px);
-  box-shadow: 0 28px 50px rgba(1, 7, 20, 0.45);
-  border-radius: 1.25rem;
+  box-shadow: 0 26px 54px rgba(1, 9, 14, 0.44);
+  border-radius: 1.35rem;
 }
 
 .section-title {
   text-align: center;
-  font-size: clamp(1.4rem, 1.05rem + 1.2vw, 2rem);
+  font-size: clamp(1.45rem, 1.1rem + 1.2vw, 2.15rem);
   margin-bottom: 1rem;
   color: var(--brand-soft);
 }

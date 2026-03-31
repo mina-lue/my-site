@@ -1,12 +1,12 @@
-﻿.home-wrap {
-  padding: 1.4rem 0 0;
+.home-wrap {
+  padding: 1.6rem 0 0;
 }
 
 .hero {
   display: grid;
-  grid-template-columns: 1.05fr 1fr;
-  gap: 1rem;
-  padding: 0.9rem;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 1.35rem;
+  padding: 1.1rem;
   align-items: center;
 }
 
@@ -17,11 +17,11 @@
 
 .profile-card {
   width: min(100%, 440px);
-  border-radius: 1rem;
-  border: 1px solid rgba(185, 206, 255, 0.25);
-  padding: 0.7rem;
-  background: linear-gradient(170deg, rgba(23, 43, 85, 0.9), rgba(10, 20, 42, 0.92));
-  box-shadow: 0 18px 34px rgba(1, 8, 22, 0.45);
+  border-radius: 1.1rem;
+  border: 1px solid rgba(153, 205, 218, 0.3);
+  padding: 0.8rem;
+  background: linear-gradient(170deg, rgba(22, 56, 70, 0.94), rgba(10, 26, 35, 0.95));
+  box-shadow: 0 24px 40px rgba(2, 10, 15, 0.42);
 }
 
 .hero-media img {
@@ -29,8 +29,9 @@
   height: min(430px, 58vw);
   min-height: 340px;
   object-fit: cover;
-  border-radius: 0.75rem;
-  filter: saturate(0.9);
+  border-radius: 0.88rem;
+  border: 1px solid rgba(153, 205, 218, 0.15);
+  filter: saturate(0.88) contrast(1.04);
 }
 
 .social-icons {
@@ -50,12 +51,13 @@
   place-items: center;
   color: #d8e6ff;
   border: 1px solid var(--line);
-  background: rgba(120, 150, 245, 0.14);
-  transition: transform 160ms ease;
+  background: rgba(90, 215, 207, 0.12);
+  transition: transform 160ms ease, background-color 160ms ease;
 }
 
 .social-icons a:hover {
   transform: translateY(-2px);
+  background: rgba(90, 215, 207, 0.22);
 }
 
 .social-icons svg {
@@ -68,15 +70,19 @@
 }
 
 .social-icons a.instagram {
-  color: #e1306c;
+  color: #ff5d9e;
+}
+
+.social-icons a.linkedin {
+  color: #61a9ff;
 }
 
 .social-icons a.whatsapp {
-  color: #25d366;
+  color: #43de83;
 }
 
 .social-icons a.telegram {
-  color: #229ed9;
+  color: #58b3df;
 }
 
 .social-icons a:active {
@@ -92,12 +98,12 @@
   font-weight: 700;
   letter-spacing: 0.11em;
   text-transform: uppercase;
-  color: var(--brand-soft);
+  color: #ffd2c3;
   margin: 0 0 0.7rem;
 }
 
 .hero-body h1 {
-  font-size: clamp(1.85rem, 1.4rem + 1.4vw, 2.8rem);
+  font-size: clamp(1.9rem, 1.5rem + 1.45vw, 3rem);
   line-height: 1.08;
   margin: 0;
 }
@@ -106,6 +112,33 @@
   margin-top: 0.8rem;
   color: var(--text-muted);
   line-height: 1.65;
+}
+
+.hero-metrics {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.hero-metrics > div {
+  border-radius: 0.85rem;
+  border: 1px solid rgba(153, 205, 218, 0.24);
+  background: rgba(17, 46, 58, 0.62);
+  padding: 0.6rem 0.65rem;
+}
+
+.metric-value {
+  margin: 0;
+  color: #f9d0c2;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.metric-label {
+  margin: 0.16rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.73rem;
 }
 
 .hero-actions {
@@ -129,14 +162,15 @@
 }
 
 .hero-btn.primary {
-  color: #0b1934;
-  background: linear-gradient(145deg, #ffd5a0, #ffad54);
+  color: #09131a;
+  border: 1px solid rgba(255, 190, 169, 0.8);
+  background: linear-gradient(145deg, #ffd5c7, #ff845c);
 }
 
 .hero-btn.secondary {
   color: var(--text-main);
   border: 1px solid var(--line);
-  background: rgba(140, 167, 255, 0.06);
+  background: rgba(90, 215, 207, 0.1);
 }
 
 @media (max-width: 900px) {
@@ -152,5 +186,9 @@
 
   .profile-card {
     width: min(100%, 360px);
+  }
+
+  .hero-metrics {
+    grid-template-columns: 1fr;
   }
 }

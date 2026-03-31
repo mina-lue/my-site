@@ -9,7 +9,7 @@
 
 .contact-card h2 {
   margin: 0;
-  color: #ffe5bf;
+  color: #ffd3c4;
   font-size: clamp(1.35rem, 1rem + 1.1vw, 1.85rem);
 }
 
@@ -30,8 +30,14 @@
   border: 1px solid var(--line);
   border-radius: 999px;
   padding: 0.48rem 0.86rem;
-  background: rgba(140, 167, 255, 0.06);
-  color: #dde9ff;
+  background: rgba(90, 215, 207, 0.09);
+  color: #dff0f3;
   font-size: 0.88rem;
   font-weight: 600;
+}
+
+.contact-actions a:first-child {
+  border-color: rgba(255, 160, 134, 0.6);
+  background: rgba(255, 132, 92, 0.16);
+  color: #ffe4db;
 }

@@ -8,12 +8,13 @@
   padding: 1.1rem;
   display: flex;
   flex-direction: column;
+  border-radius: 1.1rem;
 }
 
 .service-card h3 {
   margin: 0;
   font-size: 1.12rem;
-  color: #fff3db;
+  color: #ffd9cc;
 }
 
 .service-card p {
@@ -24,12 +25,13 @@
 
 .service-request-btn {
   display: inline-flex;
-  align-self: center;
-  margin-top: 0.85rem;
+  align-self: flex-start;
+  margin-top: 0.9rem;
   padding: 0.5rem 0.8rem;
   border-radius: 0.7rem;
-  border: 1px solid rgba(255, 201, 140, 0.5);
-  color: #ffe9c8;
+  border: 1px solid rgba(255, 160, 134, 0.55);
+  color: #ffe5dd;
+  background: rgba(255, 132, 92, 0.12);
   text-decoration: none;
   font-weight: 700;
   transition: transform 180ms ease, border-color 180ms ease;
@@ -37,7 +39,7 @@
 
 .service-request-btn:hover {
   transform: translateY(-1px);
-  border-color: rgba(255, 201, 140, 0.9);
+  border-color: rgba(255, 160, 134, 0.88);
 }
 
 @media (min-width: 860px) {

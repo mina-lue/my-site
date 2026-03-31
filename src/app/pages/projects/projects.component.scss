@@ -2,11 +2,11 @@
   margin: 0 auto 1.35rem;
   color: var(--text-muted);
   text-align: center;
-  max-width: 680px;
+  max-width: 700px;
 }
 
 .back-link {
-  color: #ffe4c0;
+  color: #ffd3c4;
   text-decoration: none;
   font-weight: 700;
   width: fit-content;
@@ -20,12 +20,12 @@
 }
 
 .filters-wrap {
-  padding: 0.9rem;
-  margin-bottom: 1rem;
+  padding: 1rem;
+  margin-bottom: 1.1rem;
 }
 
 .filter-group + .filter-group {
-  margin-top: 0.85rem;
+  margin-top: 0.95rem;
 }
 
 .filter-label {
@@ -46,23 +46,24 @@
 .filter-list button {
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(120, 150, 245, 0.08);
+  background: rgba(90, 215, 207, 0.09);
   color: var(--text-main);
-  padding: 0.35rem 0.75rem;
+  padding: 0.38rem 0.78rem;
   font-size: 0.8rem;
   cursor: pointer;
+  transition: background-color 160ms ease;
 }
 
 .filter-list button.active {
-  background: rgba(255, 194, 122, 0.2);
-  border-color: rgba(255, 194, 122, 0.6);
-  color: #ffe9c8;
+  background: rgba(255, 132, 92, 0.22);
+  border-color: rgba(255, 132, 92, 0.56);
+  color: #ffe4db;
 }
 
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 1.1rem;
 }
 
 .empty-state {
@@ -78,11 +79,11 @@
 }
 
 .load-more-btn {
-  border: 1px solid rgba(255, 193, 122, 0.5);
+  border: 1px solid rgba(255, 160, 134, 0.58);
   border-radius: 999px;
-  background: rgba(255, 193, 122, 0.14);
-  color: #ffe9c8;
-  padding: 0.5rem 1rem;
+  background: rgba(255, 132, 92, 0.18);
+  color: #ffe4db;
+  padding: 0.55rem 1rem;
   font-weight: 700;
   cursor: pointer;
 }
@@ -99,8 +100,9 @@
   font-size: 0.88rem;
   padding: 0.62rem 1rem;
   border-radius: 999px;
-  color: #0b1934;
-  background: linear-gradient(145deg, #ffd5a0, #ffad54);
+  color: #09131a;
+  border: 1px solid rgba(255, 160, 134, 0.7);
+  background: linear-gradient(145deg, #ffd5c7, #ff845c);
 }
 
 @media (min-width: 760px) {

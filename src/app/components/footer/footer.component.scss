@@ -1,9 +1,9 @@
 .footer-wrap {
   margin-top: 4.2rem;
-  border-top: 1px solid rgba(165, 186, 255, 0.2);
+  border-top: 1px solid rgba(153, 205, 218, 0.24);
   background:
-    radial-gradient(700px 260px at 5% 0%, rgba(255, 159, 67, 0.14), transparent 68%),
-    rgba(5, 10, 23, 0.95);
+    radial-gradient(700px 260px at 5% 0%, rgba(255, 132, 92, 0.17), transparent 68%),
+    rgba(5, 16, 22, 0.95);
   padding-top: 2rem;
 }
 
@@ -16,7 +16,7 @@
 .footer-grid h3,
 .footer-grid h4 {
   margin: 0 0 0.55rem;
-  color: #ffe3bf;
+  color: #ffd3c4;
 }
 
 .footer-grid p,
@@ -25,6 +25,10 @@
   color: var(--text-muted);
   line-height: 1.6;
   text-decoration: none;
+}
+
+.footer-grid a:hover {
+  color: #ecf6f9;
 }
 
 .footer-grid ul {
