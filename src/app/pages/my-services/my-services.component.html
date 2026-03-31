@@ -1,22 +1,73 @@
 <div class="section-shell services fade-up">
   <h2 class="section-title">Services</h2>
   <div class="service-grid">
-    <article class="service-card glass-card">
-      <h3>Full Stack Application Development</h3>
-      <p>End-to-end product development across frontend, backend, APIs, databases, and deployment workflows.</p>
-      <a class="service-request-btn" [href]="getServiceRequestLink('Full Stack Application Development')">Request Service</a>
-    </article>
-
-    <article class="service-card glass-card">
-      <h3>Landing Pages Design and Development</h3>
-      <p>Conversion-focused landing pages with clear messaging, responsive UI, and modern implementation.</p>
-      <a class="service-request-btn" [href]="getServiceRequestLink('Landing Pages Design and Development')">Request Service</a>
-    </article>
-
-    <article class="service-card glass-card">
-      <h3>Automated Workflow Applications</h3>
-      <p>Custom workflow systems that automate repetitive operations, approvals, and business process coordination.</p>
-      <a class="service-request-btn" [href]="getServiceRequestLink('Automated Workflow Applications')">Request Service</a>
+    <article class="service-card glass-card" *ngFor="let service of services">
+      <h3>{{ service.name }}</h3>
+      <p>{{ service.description }}</p>
+      <button type="button" class="service-request-btn" (click)="openServiceRequestForm(service.name)">Request Service</button>
     </article>
   </div>
+
+  <section id="service-request-form" class="service-form glass-card" *ngIf="isFormOpen">
+    <button type="button" class="close-form-btn" (click)="closeServiceRequestForm()" aria-label="Close service request form">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6.7 5.3 12 10.6l5.3-5.3 1.4 1.4L13.4 12l5.3 5.3-1.4 1.4L12 13.4l-5.3 5.3-1.4-1.4L10.6 12 5.3 6.7l1.4-1.4Z" fill="currentColor" />
+      </svg>
+    </button>
+    <h3>Service Request Form</h3>
+    <p>
+      Fill this form and submit. It opens a prefilled request in email, WhatsApp, or Telegram sent to
+      <strong>minaluemesele&#64;gmail.com</strong>.
+    </p>
+
+    <div class="form-grid">
+      <label>
+        <span>Your Name</span>
+        <input type="text" [(ngModel)]="request.name" name="requestName" placeholder="Your full name" />
+      </label>
+
+      <label>
+        <span>Your Email</span>
+        <input type="email" [(ngModel)]="request.email" name="requestEmail" placeholder="you@example.com" />
+      </label>
+
+      <label>
+        <span>Company / Client</span>
+        <input type="text" [(ngModel)]="request.company" name="requestCompany" placeholder="Company or client name" />
+      </label>
+
+      <label>
+        <span>Requested Service</span>
+        <select [(ngModel)]="request.service" name="requestService">
+          <option *ngFor="let service of services" [value]="service.name">{{ service.name }}</option>
+        </select>
+      </label>
+
+      <label>
+        <span>Timeline</span>
+        <input type="text" [(ngModel)]="request.timeline" name="requestTimeline" placeholder="e.g. 3 weeks" />
+      </label>
+
+      <label>
+        <span>Budget</span>
+        <input type="text" [(ngModel)]="request.budget" name="requestBudget" placeholder="e.g. $2,000 - $3,000" />
+      </label>
+    </div>
+
+    <label class="full-width">
+      <span>Project Details</span>
+      <textarea
+        rows="6"
+        [(ngModel)]="request.details"
+        name="requestDetails"
+        placeholder="Describe your goals, scope, and expected deliverables."
+      ></textarea>
+    </label>
+
+    <div class="form-actions">
+      <a class="service-request-btn" [href]="requestMailtoLink">Send by Email</a>
+      <a class="service-request-btn social-btn whatsapp-btn" [href]="requestWhatsappLink" target="_blank" rel="noopener noreferrer">Send via WhatsApp</a>
+      <a class="service-request-btn social-btn telegram-btn" [href]="requestTelegramLink" target="_blank" rel="noopener noreferrer">Send via Telegram</a>
+    </div>
+  </section>
 </div>
