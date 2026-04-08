@@ -104,61 +104,136 @@ export const PORTFOLIO_ITEMS: Project[] = [
     link: 'https://minalu.web.app'
   },
   {
-    slug: 'school-system',
-    title: 'School System',
+    slug: 'kello-school-platform',
+    title: 'Kello School Platform',
     category: 'commercial',
-    description: 'Full school management system for teachers, admins, students, and parents.',
-    imageUrl: 'yellow_me.png',
-    overview: 'A centralized school platform for academic, administrative, and communication workflows.',
-    technologies: ['Angular', 'Spring Boot', 'SQL Database'],
+    description: 'Production-grade school operations platform with multi-role workflows across web and mobile.',
+    imageUrl: 'school/admin_home.png',
+    overview:
+      'Kello unifies attendance, academics, student records, and finance workflows into one role-based platform for school operations.',
+    technologies: ['Angular', 'React Native', 'Spring Boot', 'PostgreSQL', 'RBAC', 'OAuth2', 'JWT'],
+    isFlagship: true,
+    proofChips: ['Multi-tenant', '5 Roles', 'Web + Mobile'],
     highlights: [
-      'Modules for student records and attendance',
-      'Teacher workflow for grading and reporting',
-      'Admin tooling for user and role management'
+      'Role-based portal for admin, teachers, students, and parents',
+      'Finance and academic operations in one workflow',
+      'Cross-platform delivery: Angular web and React Native mobile'
     ],
     problemStatement:
-      'Schools were using disconnected tools for attendance, grading, and administration, causing delays and inconsistent records.',
+      'Schools were managing academics, attendance, and finance in disconnected tools, creating delays, inconsistent records, and weak operational visibility.',
     solutionApproach:
-      'Developed a unified school platform with dedicated modules for teachers, admins, students, and parent-facing communication.',
+      'Built a centralized platform with role-specific modules and shared data models, prioritizing reliable daily operations and low-friction adoption.',
     stackByLayer: [
       {
         layer: 'Frontend',
-        tools: ['Angular'],
-        why: 'Strong modular structure for complex role-based interfaces.'
+        tools: ['Angular (Web)', 'React Native (Mobile)'],
+        why: 'Supports both administration-heavy web workflows and on-the-go teacher mobile usage.'
       },
       {
         layer: 'Backend',
         tools: ['Spring Boot'],
-        why: 'Reliable service layer for institutional workflows and role logic.'
+        why: 'Provides a stable service layer for role-based academic and finance operations.'
       },
       {
         layer: 'Database',
-        tools: ['SQL Database'],
-        why: 'Structured relational model for academic and administrative data.'
+        tools: ['PostgreSQL', 'Flyway'],
+        why: 'Maintains consistent relational records with controlled schema evolution.'
+      },
+      {
+        layer: 'Security',
+        tools: ['JWT', 'OAuth2', 'RBAC'],
+        why: 'Role-scoped access protects sensitive student, academic, and finance data.'
+      },
+      {
+        layer: 'Performance',
+        tools: ['Redis'],
+        why: 'Improves responsiveness for high-frequency lookups and dashboard reads.'
       }
     ],
+    scopeAtGlance: [
+      { label: 'Roles', value: 'Admin, Teacher, Student, Parent, Accountant' },
+      { label: 'Platforms', value: 'Web admin portal + React Native mobile app' },
+      { label: 'Core Modules', value: 'Attendance, Exams, Student Registry, Finance, Analytics' }
+    ],
+    architectureDecision:
+      'V1 was delivered as a modular monolith in Spring Boot to accelerate delivery and reduce operational complexity, while preserving clear module boundaries for a future service split.',
+    executionStatus: [
+      'Completed baseline modules for attendance, exam workflows, student listing, and fee setup',
+      'Released teacher mobile views for home, class, attendance, and academic charts',
+      'Next phase focuses on advanced reporting, notification automation, and deeper parent communication'
+    ],
     flowSteps: [
-      { step: 'User & Role Provisioning', detail: 'Admins manage access for teachers, students, and parents.' },
-      { step: 'Academic Operations', detail: 'Teachers manage attendance, grading, and class activities.' },
-      { step: 'Administrative Workflows', detail: 'School admins monitor records, users, and institutional operations.' },
-      { step: 'Progress Visibility', detail: 'Stakeholders access relevant records and performance insights.' }
+      { step: 'School Setup & Role Provisioning', detail: 'Admin configures school data, classes, users, and role-specific access controls.' },
+      { step: 'Teacher Daily Operations', detail: 'Teachers manage classes and attendance on web/mobile with real-time data sync.' },
+      { step: 'Academic & Exam Management', detail: 'Academic teams publish exam structure and monitor student progress by class and subject.' },
+      { step: 'Finance Workflow', detail: 'Accounting/admin teams manage fee structures and align collection visibility with student records.' },
+      { step: 'Stakeholder Visibility', detail: 'Leaders access operational dashboards and reports for decision-making.' }
+    ],
+    mediaGallery: [
+      {
+        src: 'school/admin_home.png',
+        alt: 'Kello admin dashboard overview',
+        caption: 'Web dashboard showing high-level school operations overview.',
+        kind: 'web'
+      },
+      {
+        src: 'school/list_students.png',
+        alt: 'Student listing module in Kello web app',
+        caption: 'Student registry workflow used by administration.',
+        kind: 'web'
+      },
+      {
+        src: 'school/exams.png',
+        alt: 'Exam management screen in Kello',
+        caption: 'Academic operations for exam configuration and tracking.',
+        kind: 'web'
+      },
+      {
+        src: 'school/fee_structure.png',
+        alt: 'Fee structure management screen',
+        caption: 'Finance module for fee setup and institutional billing rules.',
+        kind: 'web'
+      },
+      {
+        src: 'school/mobile_teachers_home.jpg',
+        alt: 'Teacher mobile home screen',
+        caption: 'Mobile teacher entry point for daily operational tasks.',
+        kind: 'mobile'
+      },
+      {
+        src: 'school/mobile_teachers_attendance.jpg',
+        alt: 'Teacher attendance workflow on mobile',
+        caption: 'Attendance capture flow optimized for classroom execution.',
+        kind: 'mobile'
+      },
+      {
+        src: 'school/mobile_teachers_classes.jpg',
+        alt: 'Teacher class list on mobile',
+        caption: 'Teacher class navigation for quick access to classroom workflows.',
+        kind: 'mobile'
+      },
+      {
+        src: 'school/mobile_academics_chart.jpg',
+        alt: 'Mobile academic chart view',
+        caption: 'Academic charting view for fast mobile performance tracking.',
+        kind: 'mobile'
+      }
     ],
     impactPoints: [
-      'Centralized fragmented school workflows',
-      'Improved record consistency and traceability',
-      'Reduced administrative coordination overhead'
+      'Replaced fragmented school workflows with one operational platform',
+      'Improved data consistency across academics, attendance, and finance',
+      'Reduced day-to-day coordination overhead for school operations teams'
     ],
     roleOwnership: [
-      'Led system design for multi-role platform behavior',
-      'Implemented teacher/admin modules and workflow logic',
-      'Coordinated frontend-backend integration'
+      'Led architecture and role-model design for the multi-tenant platform',
+      'Implemented major teacher, admin, and academic workflow modules',
+      'Drove cross-platform integration between web frontend, mobile app, and backend services'
     ],
     tradeoffs: [
-      'Would add advanced parent communication tooling in v2',
-      'Would introduce richer analytics and notification automation'
+      'V1 favored faster delivery via modular monolith over early microservice decomposition',
+      'Next iteration adds deeper analytics, automated alerts, and richer parent communication flows'
     ],
-    year: 2025,
-    link: 'https://minalu.web.app'
+    year: 2025
   },
   {
     slug: 'issue-tracking-dashboard',

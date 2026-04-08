@@ -43,7 +43,7 @@ export class ProjectsComponent implements OnInit {
 
   get technologyFilters(): string[] {
     const values = new Set<string>();
-    for (const project of this.projects) {
+    for (const project of this.orderedProjects) {
       for (const tech of project.technologies ?? []) {
         values.add(tech);
       }
@@ -51,12 +51,16 @@ export class ProjectsComponent implements OnInit {
     return ['all', ...Array.from(values).sort((a, b) => a.localeCompare(b))];
   }
 
+  get orderedProjects(): Project[] {
+    return [...this.projects].sort((left, right) => Number(Boolean(right.isFlagship)) - Number(Boolean(left.isFlagship)));
+  }
+
   get filteredProjects(): Project[] {
     if (this.previewMode) {
-      return this.projects;
+      return this.orderedProjects;
     }
 
-    return this.projects.filter((project) => {
+    return this.orderedProjects.filter((project) => {
       const categoryMatches = this.selectedCategory === 'all' || project.category === this.selectedCategory;
       const technologyMatches =
         this.selectedTechnology === 'all' || (project.technologies ?? []).includes(this.selectedTechnology);

@@ -3,8 +3,25 @@
 }
 
 .media-wrap {
+  position: relative;
   height: 220px;
   border-bottom: 1px solid rgba(153, 205, 218, 0.18);
+}
+
+.flagship-badge {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.7rem;
+  z-index: 1;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-radius: 999px;
+  padding: 0.26rem 0.56rem;
+  border: 1px solid rgba(255, 170, 118, 0.68);
+  color: #ffe7d8;
+  background: rgba(255, 132, 92, 0.3);
 }
 
 .media-wrap img {
@@ -72,6 +89,22 @@
   padding: 0.2rem 0.48rem;
   color: #d4e8ee;
   background: rgba(90, 215, 207, 0.08);
+}
+
+.proof-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+.proof-row span {
+  font-size: 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 170, 118, 0.42);
+  padding: 0.2rem 0.48rem;
+  color: #ffe6db;
+  background: rgba(255, 132, 92, 0.12);
 }
 
 .card-actions {

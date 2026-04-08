@@ -1,5 +1,6 @@
 <article class="glass-card project-card">
   <div class="media-wrap">
+    <span class="flagship-badge" *ngIf="project?.isFlagship">Flagship</span>
     <img [src]="project?.imageUrl" [alt]="project?.title || 'Project image'" />
   </div>
 
@@ -17,6 +18,10 @@
 
     <div class="tech-row" *ngIf="project?.technologies?.length">
       <span *ngFor="let tech of (project?.technologies | slice:0:3)">{{ tech }}</span>
+    </div>
+
+    <div class="proof-row" *ngIf="project?.proofChips?.length">
+      <span *ngFor="let chip of (project?.proofChips | slice:0:3)">{{ chip }}</span>
     </div>
 
     <div class="card-actions" *ngIf="project">

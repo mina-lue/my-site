@@ -39,6 +39,30 @@
     </div>
   </article>
 
+  <div class="details-grid" *ngIf="project.scopeAtGlance?.length || project.architectureDecision || project.executionStatus?.length">
+    <article class="glass-card detail-card" *ngIf="project.scopeAtGlance?.length">
+      <h2>Scope at a Glance</h2>
+      <div class="fact-list">
+        <div class="fact-row" *ngFor="let fact of project.scopeAtGlance">
+          <p class="fact-label">{{ fact.label }}</p>
+          <p class="fact-value">{{ fact.value }}</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="glass-card detail-card" *ngIf="project.architectureDecision">
+      <h2>Architecture Decision</h2>
+      <p class="detail-copy">{{ project.architectureDecision }}</p>
+    </article>
+  </div>
+
+  <article class="glass-card detail-card" *ngIf="project.executionStatus?.length">
+    <h2>Execution Status</h2>
+    <ul>
+      <li *ngFor="let item of project.executionStatus">{{ item }}</li>
+    </ul>
+  </article>
+
   <article class="glass-card detail-card" *ngIf="project.flowSteps?.length">
     <h2>Solution Flow</h2>
     <div class="flow-list">
@@ -47,6 +71,20 @@
         <h3>{{ flow.step }}</h3>
         <p>{{ flow.detail }}</p>
       </div>
+    </div>
+  </article>
+
+  <article class="glass-card detail-card" *ngIf="project.mediaGallery?.length">
+    <h2>Project Screens</h2>
+    <div class="gallery-grid">
+      <figure
+        class="gallery-item"
+        [class.gallery-item--mobile]="media.kind === 'mobile'"
+        [class.gallery-item--web]="media.kind !== 'mobile'"
+        *ngFor="let media of project.mediaGallery">
+        <img [src]="media.src" [alt]="media.alt" />
+        <figcaption *ngIf="media.caption">{{ media.caption }}</figcaption>
+      </figure>
     </div>
   </article>
 
