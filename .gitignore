@@ -28,6 +28,9 @@ yarn-error.log
 
 # Miscellaneous
 /.angular/cache
+.firebase/
+tmp-ng-serve.log
+tmp-ng-serve.err.log
 .sass-cache/
 /connect.lock
 /coverage
