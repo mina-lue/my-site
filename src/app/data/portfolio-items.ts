@@ -236,55 +236,104 @@ export const PORTFOLIO_ITEMS: Project[] = [
     year: 2025
   },
   {
-    slug: 'issue-tracking-dashboard',
-    title: 'Issue Tracking Dashboard',
-    category: 'learning',
-    description: 'Tooling for issue lifecycle tracking, resolution metrics, and team visibility.',
-    imageUrl: 'my-foot-bg.jpg',
-    overview: 'An operations dashboard for tracking defects, ownership, and progress across teams.',
-    technologies: ['Angular', 'Charting', 'Workflow Automation'],
+    slug: 'kule-family-networking-app',
+    title: 'Kule Family Networking Application',
+    category: 'commercial',
+    description: 'A private family social network with lineage-based tree navigation, feed interactions, chat, and admin-controlled onboarding.',
+    imageUrl: 'kule/feed.jpg',
+    overview: 'Kule is a family-first networking platform that combines social posting, direct messaging, and a generation-aware family tree into one secure mobile experience.',
+    technologies: ['React Native (Expo)', 'Node.js/Express', 'PostgreSQL', 'Socket.IO'],
     highlights: [
-      'Issue states with assignment and SLA visibility',
-      'Resolution and trend insights for teams',
-      'Workflow support for status transitions'
+      'Family tree graph with generation logic, parent-child-sibling edges, and spouse links',
+      'Social feed with post tags, engagement, and profile-driven interactions',
+      'Role-based admin workflows for invitation, approval, and direct member registration'
     ],
     problemStatement:
-      'Teams lacked clear visibility into issue ownership, SLA risk, and resolution trends across ongoing operational work.',
+      'Families needed a trusted digital space to communicate, preserve lineage context, and onboard relatives with controlled access rather than open public social platforms.',
     solutionApproach:
-      'Built an issue operations dashboard to track issue lifecycle state, assignment, performance metrics, and workflow transitions.',
+      'Built a mobile-first family networking platform with invite-gated registration, realtime-ready chat, and a lineage model that keeps descendants, spouses, and generations structurally connected.',
     stackByLayer: [
       {
         layer: 'Frontend',
-        tools: ['Angular', 'Charting'],
-        why: 'Clear dashboard UI for status intelligence and trend analysis.'
+        tools: ['React Native (Expo)', 'TypeScript'],
+        why: 'Delivers a polished mobile UX for feed, chat, profile, and family tree navigation.'
       },
       {
-        layer: 'Workflow Layer',
-        tools: ['Workflow Automation'],
-        why: 'Consistent issue state transitions and reduced manual status drift.'
+        layer: 'Backend/API',
+        tools: ['Node.js', 'Express', 'PostgreSQL', 'JWT'],
+        why: 'Supports secure auth, invite-gated onboarding, family graph rules, and moderation controls.'
+      },
+      {
+        layer: 'Realtime & Resilience',
+        tools: ['Socket.IO', 'REST Polling Fallback'],
+        why: 'Keeps chat usable in unstable network conditions while preserving near-realtime behavior.'
       }
     ],
+    scopeAtGlance: [
+      { label: 'Primary Roles', value: 'Super Admin, Admin, Member, Pending User' },
+      { label: 'Core Domains', value: 'Feed, Chat, Family Tree, Invitations, User Governance' },
+      { label: 'Platforms', value: 'React Native mobile app + Node.js backend API' }
+    ],
+    architectureDecision:
+      'The product uses a centralized API with strict role checks and relationship validation so social features and family-graph integrity remain consistent as member records grow.',
+    executionStatus: [
+      'Delivered mobile feed, profile, chat list/chat screens, and family tree exploration flows',
+      'Implemented invitation signup, pending-user approval, and super-admin user management screens',
+      'Hardened onboarding with father/mother relationship validation and lineage constraints'
+    ],
     flowSteps: [
-      { step: 'Issue Intake', detail: 'New issues are captured with owner and priority context.' },
-      { step: 'Assignment & State Tracking', detail: 'Teams manage state transitions with accountable ownership.' },
-      { step: 'SLA & Trend Monitoring', detail: 'Dashboard surfaces overdue risk and resolution trends.' },
-      { step: 'Operational Review', detail: 'Leads use insights to optimize team execution flow.' }
+      { step: 'Invitation & Access Control', detail: 'Admins create invite codes and control who can register into the network.' },
+      { step: 'Member Onboarding', detail: 'Signup captures parent/spouse relationships to preserve lineage continuity from day one.' },
+      { step: 'Daily Social Interaction', detail: 'Family members post updates, browse tagged feed content, and communicate through chat.' },
+      { step: 'Family Graph Navigation', detail: 'Users explore cross-generation relationships with spouse and bloodline links in one tree view.' },
+      { step: 'Administrative Governance', detail: 'Super admins monitor pending users, manage account status, and keep community quality high.' }
+    ],
+    mediaGallery: [
+      {
+        src: 'kule/feed.jpg',
+        alt: 'Kule mobile feed screen',
+        caption: 'Family activity feed with post cards and social interaction entry points.',
+        kind: 'mobile'
+      },
+      {
+        src: 'kule/chat.jpg',
+        alt: 'Kule direct chat screen',
+        caption: 'Realtime-style family messaging with resilient fallback behavior.',
+        kind: 'mobile'
+      },
+      {
+        src: 'kule/family_tree.jpg',
+        alt: 'Kule family tree visualization',
+        caption: 'Lineage-first tree navigation with generation and spouse relationship context.',
+        kind: 'mobile'
+      },
+      {
+        src: 'kule/profile.jpg',
+        alt: 'Kule profile screen',
+        caption: 'Member profile and identity details used across feed and relationship views.',
+        kind: 'mobile'
+      },
+      {
+        src: 'kule/login.jpg',
+        alt: 'Kule authentication screen',
+        caption: 'Secure invite-gated authentication flow for controlled family onboarding.',
+        kind: 'mobile'
+      }
     ],
     impactPoints: [
-      'Improved visibility into issue lifecycle health',
-      'Made SLA risk more explicit for teams',
-      'Supported more predictable operational delivery'
+      'Created a private digital home for distributed family communication',
+      'Reduced onboarding ambiguity through invite and lineage validation rules',
+      'Improved discoverability of family relationships through structured tree views'
     ],
     roleOwnership: [
-      'Designed dashboard information hierarchy and charts',
-      'Implemented issue state and transition workflows',
-      'Built resolution trend and SLA visualization'
+      'Designed and implemented core mobile product flows (feed, chat, profile, family tree)',
+      'Built admin capabilities for pending approvals, user management, and invitations',
+      'Implemented backend lineage and relationship handling for family graph consistency'
     ],
     tradeoffs: [
-      'Would add deeper notification/escalation rules in v2',
-      'Would integrate directly with external issue trackers'
+      'Socket connectivity depends on deployment/network quality, so polling fallback is maintained for reliability',
+      'Current tree model optimizes clarity over advanced graph analytics, which can be added in a future phase'
     ],
-    year: 2025,
-    link: 'https://minalu.web.app'
+    year: 2026
   }
 ];
