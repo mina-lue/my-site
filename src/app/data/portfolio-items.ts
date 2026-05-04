@@ -53,54 +53,109 @@ export const PORTFOLIO_ITEMS: Project[] = [
     link: 'https://minalu.web.app'
   },
   {
-    slug: 'coffee-ordering-platform',
-    title: 'Coffee Ordering Platform',
-    category: 'fun',
-    description: 'Ordering flow, menu catalog, and customer checkout built for speed and usability.',
-    imageUrl: 'my-foot-bg.jpg',
-    overview: 'A digital ordering platform for coffee shops with product browsing and a smooth checkout flow.',
-    technologies: ['React', 'Firebase', 'Responsive UI'],
+    slug: 'kuta-commerce-platform',
+    title: 'Kuta Commerce Platform',
+    category: 'commercial',
+    description: 'A modern e-commerce workflow with product discovery, cart management, order placement, and Stripe-backed payment flow.',
+    imageUrl: 'kuta/home.png',
+    overview: 'Kuta is a full-stack commerce project organized as an Nx monorepo, combining a customer-facing storefront journey with a structured backend order model.',
+    technologies: ['Angular', 'NestJS', 'Prisma', 'PostgreSQL', 'Stripe'],
     highlights: [
-      'Fast menu browsing and category filtering',
-      'Simple cart and checkout interaction',
-      'Mobile-first interface for customer convenience'
+      'Product browsing and search-oriented discovery journey',
+      'Cart-to-order flow with checkout completion states',
+      'Payment-oriented backend model with product and order entities'
     ],
-    problemStatement: 'Coffee shops needed a faster ordering process to reduce queue friction and improve customer throughput.',
+    problemStatement: 'Online commerce experiences need a clear path from discovery to purchase while keeping product and order data reliable in the backend.',
     solutionApproach:
-      'Implemented a streamlined digital ordering flow focused on quick product discovery, low-friction cart updates, and clean checkout.',
+      'Built Kuta as a monorepo full-stack system: a storefront flow for browsing, carting, and checkout, paired with backend order persistence and Stripe-linked product pricing identifiers.',
     stackByLayer: [
       {
         layer: 'Frontend',
-        tools: ['React', 'Responsive UI'],
-        why: 'Composable UI for rapid iteration and mobile-first ordering experience.'
+        tools: ['Angular', 'TypeScript', 'Responsive UI'],
+        why: 'Component-driven UI structure for scalable storefront screens and interaction flows.'
       },
       {
         layer: 'Backend & Data',
-        tools: ['Firebase'],
-        why: 'Lightweight backend setup for fast launch and simplified updates.'
+        tools: ['NestJS', 'Prisma', 'PostgreSQL'],
+        why: 'Strong domain modeling for products, orders, and order items with consistent relational integrity.'
+      },
+      {
+        layer: 'Payments',
+        tools: ['Stripe'],
+        why: 'Supports payment flow integration through stripe price identifiers and payment references.'
       }
     ],
+    scopeAtGlance: [
+      { label: 'Architecture', value: 'Nx monorepo with separate web and backend applications' },
+      { label: 'Core Domains', value: 'Catalog, Cart, Checkout, Orders, Payment linkage' },
+      { label: 'Primary Models', value: 'Product, Order, OrderItem with delivery status lifecycle' }
+    ],
+    architectureDecision:
+      'Kuta uses a monorepo layout to keep frontend and backend changes aligned, enabling faster iteration between UI flow updates and domain model evolution.',
+    executionStatus: [
+      'Implemented core storefront screens including home, cart, order, and checkout success views',
+      'Established Prisma schema for product catalog, order items, and order delivery statuses',
+      'Connected backend model to Stripe pricing/payment identifiers for checkout integration paths'
+    ],
     flowSteps: [
-      { step: 'Menu Discovery', detail: 'Customers browse categories and quickly identify products.' },
-      { step: 'Selection & Cart', detail: 'Items are added, edited, and reviewed with minimal taps.' },
-      { step: 'Checkout', detail: 'Order details are confirmed and submitted in a short flow.' },
-      { step: 'Order Handoff', detail: 'Order information is ready for kitchen/barista execution.' }
+      { step: 'Catalog Discovery', detail: 'Users browse products and narrow options through search/discovery actions.' },
+      { step: 'Cart Building', detail: 'Selected items are aggregated in cart with quantity and price context.' },
+      { step: 'Checkout & Payment', detail: 'Customers proceed through payment-oriented checkout interactions.' },
+      { step: 'Order Confirmation', detail: 'Successful payment transitions into order confirmation and fulfillment status tracking.' }
+    ],
+    mediaGallery: [
+      {
+        src: 'kuta/home.png',
+        alt: 'Kuta storefront home screen',
+        caption: 'Entry storefront screen for product discovery and browsing.',
+        kind: 'web'
+      },
+      {
+        src: 'kuta/cart.png',
+        alt: 'Kuta cart screen',
+        caption: 'Cart management flow before checkout.',
+        kind: 'web'
+      },
+      {
+        src: 'kuta/order.png',
+        alt: 'Kuta order screen',
+        caption: 'Order review stage with selected item summary.',
+        kind: 'web'
+      },
+      {
+        src: 'kuta/stripe.png',
+        alt: 'Kuta Stripe payment integration view',
+        caption: 'Payment handoff and Stripe-oriented checkout experience.',
+        kind: 'web'
+      },
+      {
+        src: 'kuta/pay_success.png',
+        alt: 'Kuta payment success confirmation',
+        caption: 'Successful checkout confirmation state after payment completion.',
+        kind: 'web'
+      },
+      {
+        src: 'kuta/search_graphql.png',
+        alt: 'Kuta product search screen',
+        caption: 'Search-focused product lookup interaction in the storefront flow.',
+        kind: 'web'
+      }
     ],
     impactPoints: [
-      'Reduced ordering friction on mobile devices',
-      'Improved speed from browse to checkout',
-      'Made menu updates easier for the business owner'
+      'Improved clarity in the shopper journey from browsing to payment completion',
+      'Created a solid backend structure for product/order lifecycle management',
+      'Enabled cleaner full-stack iteration through monorepo organization'
     ],
     roleOwnership: [
-      'Designed the end-to-end customer ordering flow',
-      'Implemented responsive UI and cart interactions',
-      'Integrated product data and order states'
+      'Designed and implemented the storefront UX flow and key purchase-state screens',
+      'Modeled product and order lifecycle entities in Prisma/PostgreSQL',
+      'Integrated payment-oriented structures and order status handling'
     ],
     tradeoffs: [
-      'Would add payment gateway integration in v2',
-      'Would add customer loyalty and reorder features'
+      'Current architecture prioritizes core purchase flow; deeper analytics and merchandising can be expanded later',
+      'Operational back-office tooling (inventory ops, refunds, and reporting) is a natural next phase'
     ],
-    year: 2024,
+    year: 2026,
     link: 'https://minalu.web.app'
   },
   {
