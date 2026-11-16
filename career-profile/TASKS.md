@@ -11,6 +11,7 @@ Updated 2026-11-16. This is the portable record of pending work. User-supplied f
 - [x] Record Timo's user-reported 300+ installs in under three months and Play Console ownership.
 - [x] Organize the central profile, master resume and practical study/refresh plans.
 - [x] Package portable agent instructions, JSON export and local application preparation.
+- [x] Push the portable profile to GitHub main and save a session handoff.
 
 ## Portfolio work
 
@@ -21,7 +22,7 @@ Updated 2026-11-16. This is the portable record of pending work. User-supplied f
 
 ## Node.js practice
 
-- [ ] Complete the [November?December practical review](plans/nodejs-practice.md).
+- [ ] Complete the [November-December practical review](plans/nodejs-practice.md).
 - [ ] Record completed exercises, observed results and design tradeoffs.
 - [ ] Promote practice claims to experience only when completed work supports them.
 

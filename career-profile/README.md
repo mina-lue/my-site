@@ -6,6 +6,8 @@ I build web applications with React and Angular, backed by Node.js, Express.js, 
 
 This folder is self-contained inside [mina-lue/my-site](https://github.com/mina-lue/my-site). Clone the repository or let an agent read these files through GitHub. No access to the original development machine, Codex skills or application source repositories is needed to write a CV.
 
+Returning later? Start with [HANDOFF.md](HANDOFF.md) for the saved state, pending work and a resume prompt.
+
 ## Start here, any agent
 
 Read [AGENTS.md](AGENTS.md), the structured files below, and the supplied job description. Generate a tailored CV and proposal using only supported facts. Put job-specific outputs in a local application folder. Missing optional information is recorded; ask only when it prevents an accurate application.
