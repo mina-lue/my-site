@@ -12,6 +12,7 @@ Updated 2026-11-16. This is the portable record of pending work. User-supplied f
 - [x] Organize the central profile, master resume and practical study/refresh plans.
 - [x] Package portable agent instructions, JSON export and local application preparation.
 - [x] Push the portable profile to GitHub main and save a session handoff.
+- [x] Add repository profile-maintenance guidance and an installed My Profile skill that checks unfinished plans and missing facts without another background recap.
 
 ## Portfolio work
 

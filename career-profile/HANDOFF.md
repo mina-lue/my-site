@@ -4,6 +4,8 @@ Saved 2026-11-16. The portable career profile is committed and pushed to the `ma
 
 ## Start here
 
+For a quick return, select **My Profile** (`$my-profile`) on the configured machine, or **Profile Maintenance** (`$profile-maintenance`) within a repository clone. The maintained workflow is `.agents/skills/profile-maintenance/SKILL.md`; the portable user launcher is `.agents/launchers/my-profile`. The repository instructions route career check-ins to this workflow automatically. A bare skill invocation scans unfinished work and missing evidence, then offers a short next-step choice. A clear supplied update is applied directly.
+
 Read [README.md](README.md), [AGENTS.md](AGENTS.md) and [TASKS.md](TASKS.md). The YAML files are the current career facts; [profile.bundle.json](profile.bundle.json) is their public export. Missing optional information can be supplied whenever Minalu has time and does not block an accurate application draft.
 
 The profile direction is settled: Node.js, Express.js, NestJS, React and Angular; React Native for mobile; Java, Spring Boot and Kotlin as substantial supporting experience. Docker, Git and GitHub are prominent; Linux is fundamentals. Preserve actual project stacks and the selected four flagship / three supporting projects.
@@ -16,6 +18,7 @@ The profile direction is settled: Node.js, Express.js, NestJS, React and Angular
 - Portable agent instructions, public JSON export, application preparation command and five passing tests.
 - GitHub validation passed for the initial profile commit. The profile is available on main.
 - Local job-application-agent and quick-job-apply skills now use this repository's career-profile directory.
+- Profile Maintenance is stored in the repository's .agents/skills directory; My Profile is installed in the local user .agents/skills directory. Its launcher is backed up in this repository for installation on another machine.
 
 ## Continue with
 

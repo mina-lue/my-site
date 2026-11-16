@@ -1,0 +1,4 @@
+interface:
+  display_name: "My Profile"
+  short_description: "Resume my profile updates and unfinished portfolio plans"
+  default_prompt: "Use $my-profile to check my saved profile, unfinished plans and missing information, then help me choose or complete the next useful update."

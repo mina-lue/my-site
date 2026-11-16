@@ -3,10 +3,14 @@ name: Validate career profile
 on:
   push:
     paths:
+      - '.agents/**'
+      - 'AGENTS.md'
       - 'career-profile/**'
       - '.github/workflows/career-profile.yml'
   pull_request:
     paths:
+      - '.agents/**'
+      - 'AGENTS.md'
       - 'career-profile/**'
       - '.github/workflows/career-profile.yml'
   workflow_dispatch:

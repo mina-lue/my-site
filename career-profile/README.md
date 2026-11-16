@@ -8,6 +8,14 @@ This folder is self-contained inside [mina-lue/my-site](https://github.com/mina-
 
 Returning later? Start with [HANDOFF.md](HANDOFF.md) for the saved state, pending work and a resume prompt.
 
+## Select a skill to continue
+
+On Minalu's machine, select **My Profile** or invoke `$my-profile`. It reads the saved context and checks unfinished tasks, plan criteria and missing facts. Supply an update with the invocation to apply it directly, or invoke it alone for a short choice of next actions. No background recap is needed.
+
+Inside a clone of this repository, the portable skill is `$profile-maintenance` in [the repository skill](../.agents/skills/profile-maintenance/SKILL.md). Repository AGENTS.md also routes profile/portfolio check-ins to the saved task board. These checks run when an agent works on the relevant request, not on a schedule.
+
+The optional user launcher is backed up in `.agents/launchers/my-profile`. To make My Profile available outside this repository on another machine, copy that folder into the user's `~/.agents/skills/` directory. The launcher locates the checkout and loads the repository workflow; it does not carry another copy of the facts or task list. If skill changes do not appear in the selector, restart Codex.
+
 ## Start here, any agent
 
 Read [AGENTS.md](AGENTS.md), the structured files below, and the supplied job description. Generate a tailored CV and proposal using only supported facts. Put job-specific outputs in a local application folder. Missing optional information is recorded; ask only when it prevents an accurate application.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Profile Maintenance"
+  short_description: "Review career facts, missing evidence and unfinished plans"
+  default_prompt: "Use $profile-maintenance to read my saved career profile and task board, check unfinished plans and missing facts, and help me choose or complete the next useful update."
