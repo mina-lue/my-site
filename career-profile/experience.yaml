@@ -1,0 +1,60 @@
+experience:
+- company: Garri Software Solutions
+  title: Full Stack Developer
+  location: Addis Ababa
+  start: 2025-12
+  end: Present
+  employment_type: Full-time, permanent
+  responsibilities:
+  - Contributed to and managed more than three transport and logistics applications using React, Redux,
+    and Express.js.
+  - Maintained and redesigned transportation workflows across operations, dispatch, finance, documents,
+    and reporting.
+  - Contributed to Garri Asset Management, an asset management application built with Next.js.
+  achievements:
+  - Supported delivery and maintenance across more than three logistics applications.
+  tech_stack:
+  - Node.js
+  - Express.js
+  - React
+  - Redux
+  - Next.js
+  - TypeScript
+  - Ant Design
+  - PostgreSQL
+  - Git
+  - GitHub
+  previous_profile_name: Garri Logistics
+  claim_boundary: Managed applications; do not infer a people-management title, team size, or sole ownership.
+  evidence_source: User report and clarifications, 2026-11-16; existing profile retained for dates and
+    formal titles.
+- company: Perago Information Systems
+  title: Angular Developer
+  location: Addis Ababa
+  start: 2024-09
+  end: 2025-06
+  employment_type: Full-time, permanent
+  responsibilities:
+  - Contributed bug fixes and features to an electronic procurement system serving more than three countries
+    in Africa.
+  - Worked with Angular and NestJS in a collaborative development team.
+  - Used NgRx state management with a facade layer mediating between application state and the UI.
+  - Developed practical experience with Docker, GitLab, and collaborative delivery workflows.
+  - Responded to issues reported by end users and client stakeholders.
+  achievements:
+  - Contributed to a procurement platform with a footprint across more than three African countries.
+  tech_stack:
+  - Angular
+  - NestJS
+  - Node.js
+  - NgRx
+  - Facade pattern
+  - Docker
+  - Git
+  - GitLab
+  - Azure DevOps
+  - Ant Design
+  claim_boundary: Country footprint describes the platform; do not imply personally deploying it in every
+    country.
+  evidence_source: User report and clarifications, 2026-11-16; existing profile retained for dates and
+    formal titles.

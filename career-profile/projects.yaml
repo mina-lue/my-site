@@ -1,0 +1,189 @@
+selection:
+  updated: '2026-11-16'
+  flagship_count: 4
+  supporting_count: 3
+  policy: These seven projects form the current portfolio. Employer applications belong in experience.yaml.
+  stack_policy: Preserve implemented stacks. Node.js positioning does not mean Spring Boot projects were
+    built in Node.js.
+projects:
+- id: timo
+  name: Timo School Platform
+  tier: flagship
+  built: '2026'
+  client_or_domain: Education
+  type: School management web and mobile platform
+  role: Full stack developer
+  description:
+  - Built a multi-tenant school platform with Angular web and React Native mobile applications backed
+    by Spring Boot.
+  - Worked on school administration and teacher, student, and parent workflows.
+  - Published the Timo mobile app through a personal Google Play Console account.
+  tech_stack:
+  - Angular
+  - React Native
+  - Expo
+  - Java
+  - Spring Boot
+  - PostgreSQL
+  impact:
+  - Timo mobile app reached 300+ installs in under three months.
+  evidence_source: Repository README for stack; user report on publishing and installs, 2026-11-16.
+  evidence_pending:
+  - Google Play listing URL
+  - Dated Play Console install evidence
+  - Release-specific feature list
+  display_order: 1
+  case_study: projects/timo.md
+  link: ''
+  workspace_path: timo
+- id: bunocart
+  name: Bunocart Telegram Marketplace
+  tier: flagship
+  built: ''
+  client_or_domain: Commerce
+  type: Telegram bot based marketplace
+  role: Full stack developer
+  description:
+  - Developed a marketplace centered on Telegram bot interactions, with an Angular web application and
+    Spring Boot service.
+  tech_stack:
+  - Angular
+  - Java
+  - Spring Boot
+  - Telegram Bot API
+  impact: []
+  evidence_source: User report; frontend package.json and backend pom.xml inspected 2026-11-16.
+  evidence_pending:
+  - Public bot or demo link
+  - Delivered workflows and ownership details
+  - Measured outcomes
+  display_order: 2
+  case_study: projects/bunocart.md
+  link: ''
+  workspace_path: Bunocart
+- id: kemeqisbet
+  name: Kemeqisbet Payment Verification
+  tier: flagship
+  built: '2026'
+  client_or_domain: Receipt verification
+  type: Payment receipt verification application
+  role: Full stack developer
+  description:
+  - Developed a React Native application and Spring Boot API for payment receipt verification.
+  - Worked on receipt submission, OCR, and verification result workflows.
+  tech_stack:
+  - React Native
+  - Expo
+  - Java
+  - Spring Boot
+  - OCR
+  - Verify.ET integration
+  impact: []
+  evidence_source: User report; mobile package.json and backend README inspected 2026-11-16.
+  evidence_pending:
+  - Public demo or listing
+  - Measured verification outcomes
+  claim_boundary: Receipt verification only; do not claim commissioned payment processing, settlement,
+    refunds, or reconciliation.
+  display_order: 3
+  case_study: projects/kemeqisbet.md
+  link: ''
+  workspace_path: Qisbet
+- id: desalegn-inventory
+  name: Desalegn Cement Factory Inventory and Employee Management
+  tier: flagship
+  built: ''
+  client_or_domain: Desalegn Dangore Cement Factory
+  type: Inventory, production, and employee operations
+  role: Full stack developer
+  description:
+  - Built an Angular and Spring Boot application for inventory and employee operations for Desalegn Cement
+    Factory.
+  - Covered stock monitoring, attendance, and salary calculation based on working hours.
+  tech_stack:
+  - Angular
+  - Java
+  - Spring Boot
+  - PostgreSQL
+  - Docker
+  impact:
+  - Gave the owner visibility into employee attendance and stock movement.
+  - Supported monthly employee payment calculations.
+  evidence_source: Existing career profile and repository README.
+  evidence_pending:
+  - Before/after screenshots
+  - Validated end-to-end demo
+  - Public demo link
+  showcase_refresh_status: Planned; modern UI and logic upgrades are not yet claimed as delivered.
+  refresh_plan: plans/inventory-refresh.md
+  display_order: 4
+  case_study: projects/desalegn-inventory.md
+  link: ''
+  workspace_path: inventory
+- id: kule
+  name: Kule Family Networking Application
+  tier: supporting
+  built: 2025-10
+  client_or_domain: Family networking
+  type: Mobile social application
+  role: Full stack developer
+  description:
+  - Worked on family networking features including feeds, messaging, and calling.
+  tech_stack:
+  - React Native
+  - Node.js
+  - Express.js
+  - PostgreSQL
+  impact: []
+  evidence_source: Existing career profile; backend package.json confirms Express.js.
+  evidence_pending:
+  - Demo link
+  - Feature delivery status, especially calling
+  display_order: 5
+  case_study: projects/kule.md
+  link: ''
+  workspace_path: kule
+- id: uzd-cars
+  name: UZD Cars Web Application
+  tier: supporting
+  built: ''
+  client_or_domain: Automotive
+  type: Cars web application
+  role: Developer
+  description:
+  - Worked on the UZD Cars web application.
+  tech_stack: []
+  impact: []
+  evidence_source: User report, 2026-11-16.
+  evidence_pending:
+  - Source location
+  - Actual technology stack
+  - Delivered features and ownership
+  - Demo link
+  display_order: 6
+  case_study: projects/uzd-cars.md
+  link: ''
+  source_status: Source folder not identified in inspected workspace; case study organized centrally.
+  workspace_path: null
+- id: hodiye
+  name: Hodiye Shop Food Ordering App
+  tier: supporting
+  built: ''
+  client_or_domain: Food ordering
+  type: Kotlin mobile application
+  role: Developer
+  description:
+  - Worked on a Kotlin food ordering application for Hodiye Shop.
+  tech_stack:
+  - Kotlin
+  impact: []
+  evidence_source: User report, 2026-11-16.
+  evidence_pending:
+  - Source location
+  - Screenshots or demo
+  - Delivered features and ownership
+  display_order: 7
+  case_study: projects/hodiye.md
+  link: ''
+  source_status: Source folder not identified in inspected workspace; case study organized centrally.
+  workspace_path: null

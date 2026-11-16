@@ -1,0 +1,85 @@
+skills:
+  programming_languages:
+  - JavaScript
+  - TypeScript
+  - Java
+  - Kotlin
+  frameworks_and_libraries:
+  - Express.js
+  - NestJS
+  - React
+  - Angular
+  - React Native
+  - Expo
+  - Next.js
+  - Spring Boot
+  - Tailwind CSS
+  - Ant Design
+  - Radix UI
+  - shadcn/ui
+  databases:
+  - PostgreSQL
+  - MySQL
+  - Supabase
+  - Neon
+  - Firebase document database
+  cloud_and_platforms:
+  - Google Cloud Platform
+  - AWS Lambda
+  devops_and_collaboration:
+  - Docker
+  - Git
+  - GitHub
+  - GitLab
+  - Linux fundamentals
+  - Azure DevOps
+  testing:
+  - Playwright
+  spoken_languages:
+  - English
+  - Amharic
+  emphasize:
+  - Node.js
+  - Express.js
+  - NestJS
+  - React
+  - Angular
+  - Docker
+  - Git
+  - GitHub
+  - React Native
+  do_not_overstate:
+  - 'Linux: fundamentals, not advanced systems administration.'
+  - 'Node.js advanced design patterns: ongoing study and practice, not proof of production use of every
+    pattern.'
+  - 'Java, Spring Boot, Kotlin: substantial supporting experience; preserve actual project stacks.'
+  - Docker experience does not imply Kubernetes or infrastructure engineering expertise.
+  - No numeric skill ratings or invented proficiency claims.
+  primary_backend:
+  - Node.js
+  - Express.js
+  - NestJS
+  primary_frontend:
+  - React
+  - Angular
+  mobile:
+  - React Native
+  - Expo
+  state_and_architecture:
+  - Redux
+  - Redux Toolkit
+  - NgRx
+  - Facade pattern
+  secondary_stack:
+  - Java
+  - Spring Boot
+  - Kotlin
+  publishing:
+  - Google Play Console
+  - Android app publishing (Timo)
+  historical_background_not_default_pitch:
+  - C++
+  - Python
+  - JEE2
+  - Swing
+  - AWT

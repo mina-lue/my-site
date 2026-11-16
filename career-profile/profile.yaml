@@ -1,0 +1,60 @@
+personal:
+  full_name: Minalu Mesele Mengesha
+  current_city: Addis Ababa
+  current_country: Ethiopia
+  email: meseminalu@gmail.com
+  linkedin_url: ''
+  github_url: https://github.com/mina-lue
+  portfolio_url: https://minalu.web.app
+targeting:
+  target_roles:
+  - Full Stack Developer (Node.js, React, Angular)
+  - Node.js Backend Developer (Express.js, NestJS)
+  - React / Angular Developer
+  - React Native Developer (select opportunities)
+  target_countries:
+  - United States
+  - Canada
+  - Europe (English-speaking)
+  work_modes:
+  - Remote
+  - Relocation
+summary:
+  total_years_experience: 4
+  current_job_title: Full Stack Web Developer
+  current_employer: Garri Software Solutions
+  background: Full stack developer focused on Node.js, Express.js, and NestJS for backend development
+    and React and Angular for web applications, with React Native for mobile delivery. At Garri Software
+    Solutions, contributed to and managed more than three logistics applications using React, Redux, and
+    Express.js, and contributed to Garri Asset Management using Next.js. At Perago Information Systems,
+    contributed to a procurement system serving more than three African countries using Angular and NestJS,
+    including NgRx state management behind a facade layer. Hands-on experience with Docker, Git, GitHub,
+    and GitLab, plus Linux fundamentals. Substantial supporting project experience with Java, Spring Boot,
+    and Kotlin. Published Timo on Google Play, reaching 300+ installs in under three months (user-reported).
+  headline: Full Stack Developer | Node.js, Express.js, NestJS | React & Angular
+  secondary_headline: React Native mobile development | Docker, Git, GitHub | Linux fundamentals
+  updated: '2026-11-16'
+  experience_years_note: Previously reported hands-on experience includes university and independent projects;
+    not four years of full-time employment.
+  short_bio: I build web applications with React and Angular, backed by Node.js, Express.js, and NestJS,
+    and mobile apps with React Native. My experience spans logistics, procurement, education, commerce,
+    and inventory systems. I work with Docker and Git-based collaboration, and published Timo on Google
+    Play, reaching 300+ installs in under three months.
+education:
+  university: Arba Minch University
+  degree: Bachelor of Science in Software Engineering
+  graduation_month: June
+  graduation_year: 2024
+  cgpa: 3.94
+  honors: []
+professional_development:
+  focus: Node.js from fundamentals through advanced design patterns
+  status: Ongoing study; distinct from delivered project experience
+  review_period: November-December 2026
+  plan: plans/nodejs-practice.md
+publishing:
+  google_play_console_account: true
+  app: Timo mobile app
+  milestone: 300+ installs in under three months
+  source: User report, 2026-11-16
+  play_store_url: ''

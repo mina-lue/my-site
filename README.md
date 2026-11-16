@@ -11,3 +11,7 @@ Here is my personal website for demonstrating my qualifications, skills and expe
 + Angular CLI 19.2.5
 + Tailwind CSS
 
+## Portable career profile
+
+The [career-profile](career-profile/README.md) directory contains the current structured career facts, resume, seven project briefs, pending work and instructions any agent can use to tailor an application. Start with its README or [agent instructions](career-profile/AGENTS.md). Profile content is maintained separately from the website's displayed copy.
+

@@ -1,0 +1,486 @@
+{
+  "profile": {
+    "personal": {
+      "full_name": "Minalu Mesele Mengesha",
+      "current_city": "Addis Ababa",
+      "current_country": "Ethiopia",
+      "email": "meseminalu@gmail.com",
+      "linkedin_url": "",
+      "github_url": "https://github.com/mina-lue",
+      "portfolio_url": "https://minalu.web.app"
+    },
+    "targeting": {
+      "target_roles": [
+        "Full Stack Developer (Node.js, React, Angular)",
+        "Node.js Backend Developer (Express.js, NestJS)",
+        "React / Angular Developer",
+        "React Native Developer (select opportunities)"
+      ],
+      "target_countries": [
+        "United States",
+        "Canada",
+        "Europe (English-speaking)"
+      ],
+      "work_modes": [
+        "Remote",
+        "Relocation"
+      ]
+    },
+    "summary": {
+      "total_years_experience": 4,
+      "current_job_title": "Full Stack Web Developer",
+      "current_employer": "Garri Software Solutions",
+      "background": "Full stack developer focused on Node.js, Express.js, and NestJS for backend development and React and Angular for web applications, with React Native for mobile delivery. At Garri Software Solutions, contributed to and managed more than three logistics applications using React, Redux, and Express.js, and contributed to Garri Asset Management using Next.js. At Perago Information Systems, contributed to a procurement system serving more than three African countries using Angular and NestJS, including NgRx state management behind a facade layer. Hands-on experience with Docker, Git, GitHub, and GitLab, plus Linux fundamentals. Substantial supporting project experience with Java, Spring Boot, and Kotlin. Published Timo on Google Play, reaching 300+ installs in under three months (user-reported).",
+      "headline": "Full Stack Developer | Node.js, Express.js, NestJS | React & Angular",
+      "secondary_headline": "React Native mobile development | Docker, Git, GitHub | Linux fundamentals",
+      "updated": "2026-11-16",
+      "experience_years_note": "Previously reported hands-on experience includes university and independent projects; not four years of full-time employment.",
+      "short_bio": "I build web applications with React and Angular, backed by Node.js, Express.js, and NestJS, and mobile apps with React Native. My experience spans logistics, procurement, education, commerce, and inventory systems. I work with Docker and Git-based collaboration, and published Timo on Google Play, reaching 300+ installs in under three months."
+    },
+    "education": {
+      "university": "Arba Minch University",
+      "degree": "Bachelor of Science in Software Engineering",
+      "graduation_month": "June",
+      "graduation_year": 2024,
+      "cgpa": 3.94,
+      "honors": []
+    },
+    "professional_development": {
+      "focus": "Node.js from fundamentals through advanced design patterns",
+      "status": "Ongoing study; distinct from delivered project experience",
+      "review_period": "November-December 2026",
+      "plan": "plans/nodejs-practice.md"
+    },
+    "publishing": {
+      "google_play_console_account": true,
+      "app": "Timo mobile app",
+      "milestone": "300+ installs in under three months",
+      "source": "User report, 2026-11-16",
+      "play_store_url": ""
+    }
+  },
+  "experience": {
+    "experience": [
+      {
+        "company": "Garri Software Solutions",
+        "title": "Full Stack Developer",
+        "location": "Addis Ababa",
+        "start": "2025-12",
+        "end": "Present",
+        "employment_type": "Full-time, permanent",
+        "responsibilities": [
+          "Contributed to and managed more than three transport and logistics applications using React, Redux, and Express.js.",
+          "Maintained and redesigned transportation workflows across operations, dispatch, finance, documents, and reporting.",
+          "Contributed to Garri Asset Management, an asset management application built with Next.js."
+        ],
+        "achievements": [
+          "Supported delivery and maintenance across more than three logistics applications."
+        ],
+        "tech_stack": [
+          "Node.js",
+          "Express.js",
+          "React",
+          "Redux",
+          "Next.js",
+          "TypeScript",
+          "Ant Design",
+          "PostgreSQL",
+          "Git",
+          "GitHub"
+        ],
+        "previous_profile_name": "Garri Logistics",
+        "claim_boundary": "Managed applications; do not infer a people-management title, team size, or sole ownership.",
+        "evidence_source": "User report and clarifications, 2026-11-16; existing profile retained for dates and formal titles."
+      },
+      {
+        "company": "Perago Information Systems",
+        "title": "Angular Developer",
+        "location": "Addis Ababa",
+        "start": "2024-09",
+        "end": "2025-06",
+        "employment_type": "Full-time, permanent",
+        "responsibilities": [
+          "Contributed bug fixes and features to an electronic procurement system serving more than three countries in Africa.",
+          "Worked with Angular and NestJS in a collaborative development team.",
+          "Used NgRx state management with a facade layer mediating between application state and the UI.",
+          "Developed practical experience with Docker, GitLab, and collaborative delivery workflows.",
+          "Responded to issues reported by end users and client stakeholders."
+        ],
+        "achievements": [
+          "Contributed to a procurement platform with a footprint across more than three African countries."
+        ],
+        "tech_stack": [
+          "Angular",
+          "NestJS",
+          "Node.js",
+          "NgRx",
+          "Facade pattern",
+          "Docker",
+          "Git",
+          "GitLab",
+          "Azure DevOps",
+          "Ant Design"
+        ],
+        "claim_boundary": "Country footprint describes the platform; do not imply personally deploying it in every country.",
+        "evidence_source": "User report and clarifications, 2026-11-16; existing profile retained for dates and formal titles."
+      }
+    ]
+  },
+  "projects": {
+    "selection": {
+      "updated": "2026-11-16",
+      "flagship_count": 4,
+      "supporting_count": 3,
+      "policy": "These seven projects form the current portfolio. Employer applications belong in experience.yaml.",
+      "stack_policy": "Preserve implemented stacks. Node.js positioning does not mean Spring Boot projects were built in Node.js."
+    },
+    "projects": [
+      {
+        "id": "timo",
+        "name": "Timo School Platform",
+        "tier": "flagship",
+        "built": "2026",
+        "client_or_domain": "Education",
+        "type": "School management web and mobile platform",
+        "role": "Full stack developer",
+        "description": [
+          "Built a multi-tenant school platform with Angular web and React Native mobile applications backed by Spring Boot.",
+          "Worked on school administration and teacher, student, and parent workflows.",
+          "Published the Timo mobile app through a personal Google Play Console account."
+        ],
+        "tech_stack": [
+          "Angular",
+          "React Native",
+          "Expo",
+          "Java",
+          "Spring Boot",
+          "PostgreSQL"
+        ],
+        "impact": [
+          "Timo mobile app reached 300+ installs in under three months."
+        ],
+        "evidence_source": "Repository README for stack; user report on publishing and installs, 2026-11-16.",
+        "evidence_pending": [
+          "Google Play listing URL",
+          "Dated Play Console install evidence",
+          "Release-specific feature list"
+        ],
+        "display_order": 1,
+        "case_study": "projects/timo.md",
+        "link": "",
+        "workspace_path": "timo"
+      },
+      {
+        "id": "bunocart",
+        "name": "Bunocart Telegram Marketplace",
+        "tier": "flagship",
+        "built": "",
+        "client_or_domain": "Commerce",
+        "type": "Telegram bot based marketplace",
+        "role": "Full stack developer",
+        "description": [
+          "Developed a marketplace centered on Telegram bot interactions, with an Angular web application and Spring Boot service."
+        ],
+        "tech_stack": [
+          "Angular",
+          "Java",
+          "Spring Boot",
+          "Telegram Bot API"
+        ],
+        "impact": [],
+        "evidence_source": "User report; frontend package.json and backend pom.xml inspected 2026-11-16.",
+        "evidence_pending": [
+          "Public bot or demo link",
+          "Delivered workflows and ownership details",
+          "Measured outcomes"
+        ],
+        "display_order": 2,
+        "case_study": "projects/bunocart.md",
+        "link": "",
+        "workspace_path": "Bunocart"
+      },
+      {
+        "id": "kemeqisbet",
+        "name": "Kemeqisbet Payment Verification",
+        "tier": "flagship",
+        "built": "2026",
+        "client_or_domain": "Receipt verification",
+        "type": "Payment receipt verification application",
+        "role": "Full stack developer",
+        "description": [
+          "Developed a React Native application and Spring Boot API for payment receipt verification.",
+          "Worked on receipt submission, OCR, and verification result workflows."
+        ],
+        "tech_stack": [
+          "React Native",
+          "Expo",
+          "Java",
+          "Spring Boot",
+          "OCR",
+          "Verify.ET integration"
+        ],
+        "impact": [],
+        "evidence_source": "User report; mobile package.json and backend README inspected 2026-11-16.",
+        "evidence_pending": [
+          "Public demo or listing",
+          "Measured verification outcomes"
+        ],
+        "claim_boundary": "Receipt verification only; do not claim commissioned payment processing, settlement, refunds, or reconciliation.",
+        "display_order": 3,
+        "case_study": "projects/kemeqisbet.md",
+        "link": "",
+        "workspace_path": "Qisbet"
+      },
+      {
+        "id": "desalegn-inventory",
+        "name": "Desalegn Cement Factory Inventory and Employee Management",
+        "tier": "flagship",
+        "built": "",
+        "client_or_domain": "Desalegn Dangore Cement Factory",
+        "type": "Inventory, production, and employee operations",
+        "role": "Full stack developer",
+        "description": [
+          "Built an Angular and Spring Boot application for inventory and employee operations for Desalegn Cement Factory.",
+          "Covered stock monitoring, attendance, and salary calculation based on working hours."
+        ],
+        "tech_stack": [
+          "Angular",
+          "Java",
+          "Spring Boot",
+          "PostgreSQL",
+          "Docker"
+        ],
+        "impact": [
+          "Gave the owner visibility into employee attendance and stock movement.",
+          "Supported monthly employee payment calculations."
+        ],
+        "evidence_source": "Existing career profile and repository README.",
+        "evidence_pending": [
+          "Before/after screenshots",
+          "Validated end-to-end demo",
+          "Public demo link"
+        ],
+        "showcase_refresh_status": "Planned; modern UI and logic upgrades are not yet claimed as delivered.",
+        "refresh_plan": "plans/inventory-refresh.md",
+        "display_order": 4,
+        "case_study": "projects/desalegn-inventory.md",
+        "link": "",
+        "workspace_path": "inventory"
+      },
+      {
+        "id": "kule",
+        "name": "Kule Family Networking Application",
+        "tier": "supporting",
+        "built": "2025-10",
+        "client_or_domain": "Family networking",
+        "type": "Mobile social application",
+        "role": "Full stack developer",
+        "description": [
+          "Worked on family networking features including feeds, messaging, and calling."
+        ],
+        "tech_stack": [
+          "React Native",
+          "Node.js",
+          "Express.js",
+          "PostgreSQL"
+        ],
+        "impact": [],
+        "evidence_source": "Existing career profile; backend package.json confirms Express.js.",
+        "evidence_pending": [
+          "Demo link",
+          "Feature delivery status, especially calling"
+        ],
+        "display_order": 5,
+        "case_study": "projects/kule.md",
+        "link": "",
+        "workspace_path": "kule"
+      },
+      {
+        "id": "uzd-cars",
+        "name": "UZD Cars Web Application",
+        "tier": "supporting",
+        "built": "",
+        "client_or_domain": "Automotive",
+        "type": "Cars web application",
+        "role": "Developer",
+        "description": [
+          "Worked on the UZD Cars web application."
+        ],
+        "tech_stack": [],
+        "impact": [],
+        "evidence_source": "User report, 2026-11-16.",
+        "evidence_pending": [
+          "Source location",
+          "Actual technology stack",
+          "Delivered features and ownership",
+          "Demo link"
+        ],
+        "display_order": 6,
+        "case_study": "projects/uzd-cars.md",
+        "link": "",
+        "source_status": "Source folder not identified in inspected workspace; case study organized centrally.",
+        "workspace_path": null
+      },
+      {
+        "id": "hodiye",
+        "name": "Hodiye Shop Food Ordering App",
+        "tier": "supporting",
+        "built": "",
+        "client_or_domain": "Food ordering",
+        "type": "Kotlin mobile application",
+        "role": "Developer",
+        "description": [
+          "Worked on a Kotlin food ordering application for Hodiye Shop."
+        ],
+        "tech_stack": [
+          "Kotlin"
+        ],
+        "impact": [],
+        "evidence_source": "User report, 2026-11-16.",
+        "evidence_pending": [
+          "Source location",
+          "Screenshots or demo",
+          "Delivered features and ownership"
+        ],
+        "display_order": 7,
+        "case_study": "projects/hodiye.md",
+        "link": "",
+        "source_status": "Source folder not identified in inspected workspace; case study organized centrally.",
+        "workspace_path": null
+      }
+    ]
+  },
+  "skills": {
+    "skills": {
+      "programming_languages": [
+        "JavaScript",
+        "TypeScript",
+        "Java",
+        "Kotlin"
+      ],
+      "frameworks_and_libraries": [
+        "Express.js",
+        "NestJS",
+        "React",
+        "Angular",
+        "React Native",
+        "Expo",
+        "Next.js",
+        "Spring Boot",
+        "Tailwind CSS",
+        "Ant Design",
+        "Radix UI",
+        "shadcn/ui"
+      ],
+      "databases": [
+        "PostgreSQL",
+        "MySQL",
+        "Supabase",
+        "Neon",
+        "Firebase document database"
+      ],
+      "cloud_and_platforms": [
+        "Google Cloud Platform",
+        "AWS Lambda"
+      ],
+      "devops_and_collaboration": [
+        "Docker",
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Linux fundamentals",
+        "Azure DevOps"
+      ],
+      "testing": [
+        "Playwright"
+      ],
+      "spoken_languages": [
+        "English",
+        "Amharic"
+      ],
+      "emphasize": [
+        "Node.js",
+        "Express.js",
+        "NestJS",
+        "React",
+        "Angular",
+        "Docker",
+        "Git",
+        "GitHub",
+        "React Native"
+      ],
+      "do_not_overstate": [
+        "Linux: fundamentals, not advanced systems administration.",
+        "Node.js advanced design patterns: ongoing study and practice, not proof of production use of every pattern.",
+        "Java, Spring Boot, Kotlin: substantial supporting experience; preserve actual project stacks.",
+        "Docker experience does not imply Kubernetes or infrastructure engineering expertise.",
+        "No numeric skill ratings or invented proficiency claims."
+      ],
+      "primary_backend": [
+        "Node.js",
+        "Express.js",
+        "NestJS"
+      ],
+      "primary_frontend": [
+        "React",
+        "Angular"
+      ],
+      "mobile": [
+        "React Native",
+        "Expo"
+      ],
+      "state_and_architecture": [
+        "Redux",
+        "Redux Toolkit",
+        "NgRx",
+        "Facade pattern"
+      ],
+      "secondary_stack": [
+        "Java",
+        "Spring Boot",
+        "Kotlin"
+      ],
+      "publishing": [
+        "Google Play Console",
+        "Android app publishing (Timo)"
+      ],
+      "historical_background_not_default_pitch": [
+        "C++",
+        "Python",
+        "JEE2",
+        "Swing",
+        "AWT"
+      ]
+    }
+  },
+  "preferences": {
+    "job_preferences": {
+      "target_countries": [
+        "United States",
+        "Canada",
+        "Europe (English-speaking)"
+      ],
+      "preferred_industries": [],
+      "work_modes": [
+        "Remote",
+        "Relocation"
+      ],
+      "willing_to_relocate": true
+    },
+    "proposal_preferences": {
+      "tone": "Precise and tailored",
+      "length": "Short",
+      "style": "Exactly tailored to the job description provided at application time",
+      "avoid_generic_language": true
+    },
+    "additional_notes": {
+      "top_achievements": [
+        "Published Timo mobile app: 300+ installs in under three months (user-reported).",
+        "Contributed to and managed more than three logistics applications at Garri Software Solutions.",
+        "Contributed to a procurement platform serving more than three African countries at Perago."
+      ],
+      "avoid_mentioning": [],
+      "positioning": "Lead with Node.js, Express.js, NestJS, React, and Angular. React Native is an additional service; Java, Spring Boot, and Kotlin are supporting experience. Use only the selected seven projects; employer work remains under employment."
+    }
+  }
+}

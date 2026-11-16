@@ -1,0 +1,24 @@
+job_preferences:
+  target_countries:
+  - United States
+  - Canada
+  - Europe (English-speaking)
+  preferred_industries: []
+  work_modes:
+  - Remote
+  - Relocation
+  willing_to_relocate: true
+proposal_preferences:
+  tone: Precise and tailored
+  length: Short
+  style: Exactly tailored to the job description provided at application time
+  avoid_generic_language: true
+additional_notes:
+  top_achievements:
+  - 'Published Timo mobile app: 300+ installs in under three months (user-reported).'
+  - Contributed to and managed more than three logistics applications at Garri Software Solutions.
+  - Contributed to a procurement platform serving more than three African countries at Perago.
+  avoid_mentioning: []
+  positioning: Lead with Node.js, Express.js, NestJS, React, and Angular. React Native is an additional
+    service; Java, Spring Boot, and Kotlin are supporting experience. Use only the selected seven projects;
+    employer work remains under employment.
