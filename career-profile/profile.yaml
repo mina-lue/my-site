@@ -20,7 +20,7 @@ targeting:
   - Remote
   - Relocation
 summary:
-  total_years_experience: 4
+  total_years_experience: 5
   current_job_title: Full Stack Web Developer
   current_employer: Garri Software Solutions
   background: Full stack developer focused on Node.js, Express.js, and NestJS for backend development
@@ -33,9 +33,15 @@ summary:
     and Kotlin. Published Timo on Google Play, reaching 300+ installs in under three months (user-reported).
   headline: Full Stack Developer | Node.js, Express.js, NestJS | React & Angular
   secondary_headline: React Native mobile development | Docker, Git, GitHub | Linux fundamentals
-  updated: '2026-11-16'
-  experience_years_note: Previously reported hands-on experience includes university and independent projects;
-    not four years of full-time employment.
+  updated: '2026-11-18'
+  experience_years_note: More than five years of hands-on Java and Spring Boot experience, starting in
+    the second year of university and including university and independent projects. The numeric total
+    is a lower bound, not a claim of five years of full-time employment or equal tenure in every stack.
+  java_spring_boot_experience:
+    duration: More than five years
+    started: Second year of university
+    scope: Includes university and independent project development; separate from employment tenure.
+    source: User clarification, 2026-11-18
   short_bio: I build web applications with React and Angular, backed by Node.js, Express.js, and NestJS,
     and mobile apps with React Native. My experience spans logistics, procurement, education, commerce,
     and inventory systems. I work with Docker and Git-based collaboration, and published Timo on Google

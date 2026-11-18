@@ -21,7 +21,7 @@ This directory is the portable source for Minalu Mesele Mengesha's professional 
 - Timo mobile app: 300+ installs in under three months, reported by the user on 2026-11-16. Personal Google Play Console account. Do not substitute active users, paid customers, independent verification or a different time window.
 - Kemeqisbet's release claim is receipt verification; do not claim commissioned payments, settlement, refunds or reconciliation.
 - UZD's stack and UZD/Hodiye source paths remain unknown. Leave missing links blank; never fabricate them.
-- Four years previously reported includes university and independent work, not four years of full-time employment.
+- User clarified on 2026-11-18: more than five years of hands-on Java and Spring Boot development, starting in the second year of university. This includes university and independent work; preserve it separately from full-time employment tenure. It supersedes the earlier four-year estimate and does not establish equal tenure in other stacks.
 - No availability, notice period, salary, work authorization or advanced Linux claim may be invented.
 
 ## Updates and portability

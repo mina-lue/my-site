@@ -11,6 +11,8 @@ Full stack developer focused on Node.js, Express.js, and NestJS for backend deve
 
 ## Experience
 
+Java and Spring Boot: more than five years of hands-on development, starting in the second year of university and including university and independent projects. This duration is separate from the employment history below.
+
 ### Garri Software Solutions — Full Stack Developer
 Addis Ababa | December 2025–Present
 

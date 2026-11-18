@@ -4,6 +4,8 @@ Updated 2026-11-16. This is the portable record of pending work. User-supplied f
 
 ## Completed
 
+- [x] Record the 2026-11-18 clarification: more than five years of hands-on Java/Spring Boot development since the second year of university, including university and independent work, separate from employment tenure.
+
 - [x] Establish Node.js, Express.js, NestJS, React and Angular as the main direction.
 - [x] Store React Native mobile work and Java/Spring Boot/Kotlin supporting experience.
 - [x] Record Perago and Garri Software Solutions, including NgRx/facade clarification.

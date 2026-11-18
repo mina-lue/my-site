@@ -27,14 +27,20 @@
       ]
     },
     "summary": {
-      "total_years_experience": 4,
+      "total_years_experience": 5,
       "current_job_title": "Full Stack Web Developer",
       "current_employer": "Garri Software Solutions",
       "background": "Full stack developer focused on Node.js, Express.js, and NestJS for backend development and React and Angular for web applications, with React Native for mobile delivery. At Garri Software Solutions, contributed to and managed more than three logistics applications using React, Redux, and Express.js, and contributed to Garri Asset Management using Next.js. At Perago Information Systems, contributed to a procurement system serving more than three African countries using Angular and NestJS, including NgRx state management behind a facade layer. Hands-on experience with Docker, Git, GitHub, and GitLab, plus Linux fundamentals. Substantial supporting project experience with Java, Spring Boot, and Kotlin. Published Timo on Google Play, reaching 300+ installs in under three months (user-reported).",
       "headline": "Full Stack Developer | Node.js, Express.js, NestJS | React & Angular",
       "secondary_headline": "React Native mobile development | Docker, Git, GitHub | Linux fundamentals",
-      "updated": "2026-11-16",
-      "experience_years_note": "Previously reported hands-on experience includes university and independent projects; not four years of full-time employment.",
+      "updated": "2026-11-18",
+      "experience_years_note": "More than five years of hands-on Java and Spring Boot experience, starting in the second year of university and including university and independent projects. The numeric total is a lower bound, not a claim of five years of full-time employment or equal tenure in every stack.",
+      "java_spring_boot_experience": {
+        "duration": "More than five years",
+        "started": "Second year of university",
+        "scope": "Includes university and independent project development; separate from employment tenure.",
+        "source": "User clarification, 2026-11-18"
+      },
       "short_bio": "I build web applications with React and Angular, backed by Node.js, Express.js, and NestJS, and mobile apps with React Native. My experience spans logistics, procurement, education, commerce, and inventory systems. I work with Docker and Git-based collaboration, and published Timo on Google Play, reaching 300+ installs in under three months."
     },
     "education": {
@@ -440,6 +446,9 @@
         "Spring Boot",
         "Kotlin"
       ],
+      "experience_notes": {
+        "java_spring_boot": "More than five years of hands-on development, starting in the second year of university, including university and independent projects (user-confirmed 2026-11-18)."
+      },
       "publishing": [
         "Google Play Console",
         "Android app publishing (Timo)"

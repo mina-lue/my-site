@@ -74,6 +74,9 @@ skills:
   - Java
   - Spring Boot
   - Kotlin
+  experience_notes:
+    java_spring_boot: More than five years of hands-on development, starting in the second year of
+      university, including university and independent projects (user-confirmed 2026-11-18).
   publishing:
   - Google Play Console
   - Android app publishing (Timo)
