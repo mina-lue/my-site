@@ -1,5 +1,7 @@
 # Resume this work
 
+Project clarification, 2026-11-18: Hodiye Shop was built in 2021 using Kotlin with a Spring Boot backend. UZD Cars was built in 2022 using PHP, plain HTML and CSS. Updated project YAML, both briefs, skills and resume; source locations and demo evidence remain pending.
+
 Latest clarification, 2026-11-18: Minalu confirms more than five years of hands-on Java and Spring Boot development, beginning in his second year of university. Profile YAML, skills and the master resume record this separately from employment tenure. The earlier four-year estimate is superseded; do not reduce Java/Spring Boot experience to post-graduation employment or apply this tenure to every stack.
 
 Saved 2026-11-16. The portable career profile is committed and pushed to the `main` branch of `mina-lue/my-site`. The initial profile commit is `b94c49d`; later commits may update it.

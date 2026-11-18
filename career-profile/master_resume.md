@@ -38,8 +38,8 @@ Addis Ababa | September 2024–June 2025
 ## Additional projects
 
 - **Kule Family Networking** — React Native, Node.js, Express.js, PostgreSQL; family feeds, messaging, and calling work.
-- **UZD Cars** — Cars web application.
-- **Hodiye Shop** — Kotlin food ordering application.
+- **UZD Cars (2022)** — Cars web application using PHP, plain HTML, and CSS.
+- **Hodiye Shop (2021)** — Kotlin food ordering application with a Spring Boot backend.
 
 ## Skills
 

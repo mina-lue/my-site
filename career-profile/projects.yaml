@@ -1,5 +1,5 @@
 selection:
-  updated: '2026-11-16'
+  updated: '2026-11-18'
   flagship_count: 4
   supporting_count: 3
   policy: These seven projects form the current portfolio. Employer applications belong in experience.yaml.
@@ -146,18 +146,20 @@ projects:
 - id: uzd-cars
   name: UZD Cars Web Application
   tier: supporting
-  built: ''
+  built: '2022'
   client_or_domain: Automotive
   type: Cars web application
   role: Developer
   description:
   - Worked on the UZD Cars web application.
-  tech_stack: []
+  tech_stack:
+  - PHP
+  - HTML
+  - CSS
   impact: []
-  evidence_source: User report, 2026-11-16.
+  evidence_source: User report, 2026-11-16; year and PHP/plain HTML/CSS stack confirmed by user, 2026-11-18.
   evidence_pending:
   - Source location
-  - Actual technology stack
   - Delivered features and ownership
   - Demo link
   display_order: 6
@@ -168,16 +170,17 @@ projects:
 - id: hodiye
   name: Hodiye Shop Food Ordering App
   tier: supporting
-  built: ''
+  built: '2021'
   client_or_domain: Food ordering
-  type: Kotlin mobile application
+  type: Kotlin mobile application with Spring Boot backend
   role: Developer
   description:
-  - Worked on a Kotlin food ordering application for Hodiye Shop.
+  - Worked on a Kotlin food ordering application for Hodiye Shop with a Spring Boot backend.
   tech_stack:
   - Kotlin
+  - Spring Boot
   impact: []
-  evidence_source: User report, 2026-11-16.
+  evidence_source: User report, 2026-11-16; year and Kotlin/Spring Boot stack confirmed by user, 2026-11-18.
   evidence_pending:
   - Source location
   - Screenshots or demo

@@ -1,8 +1,10 @@
 # Profile and portfolio task board
 
-Updated 2026-11-16. This is the portable record of pending work. User-supplied facts can be added whenever available; missing optional evidence does not block drafting a truthful application.
+Updated 2026-11-18. This is the portable record of pending work. User-supplied facts can be added whenever available; missing optional evidence does not block drafting a truthful application.
 
 ## Completed
+
+- [x] Record Hodiye Shop (2021, Kotlin and Spring Boot) and UZD Cars (2022, PHP, plain HTML and CSS), confirmed 2026-11-18.
 
 - [x] Record the 2026-11-18 clarification: more than five years of hands-on Java/Spring Boot development since the second year of university, including university and independent work, separate from employment tenure.
 
@@ -32,7 +34,7 @@ Updated 2026-11-16. This is the portable record of pending work. User-supplied f
 ## Information to add when available
 
 - [ ] Timo Google Play listing URL and dated install evidence.
-- [ ] UZD Cars source location, actual stack, delivered features and ownership.
+- [ ] UZD Cars source location, delivered features and ownership.
 - [ ] Hodiye Shop source location and demo/screenshots.
 - [ ] Bunocart demo/bot link, delivered workflows and measured outcomes.
 - [ ] Kemeqisbet demo/listing and measured verification outcomes.
