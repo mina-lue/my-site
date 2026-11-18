@@ -2,7 +2,7 @@
 
 **Full Stack Developer | Node.js, Express.js, NestJS | React & Angular**
 
-Addis Ababa, Ethiopia | meseminalu@gmail.com
+Addis Ababa, Ethiopia | minaluemesele@gmail.com
 [GitHub](https://github.com/mina-lue) | [Portfolio](https://minalu.web.app)
 
 ## Professional summary

@@ -1,5 +1,7 @@
 # Resume this work
 
+Contact correction, 2026-11-18: professional email is minaluemesele@gmail.com. Updated authoritative profile, master resume and the local MoneyGram resume. Use this address for future applications.
+
 Project clarification, 2026-11-18: Hodiye Shop was built in 2021 using Kotlin with a Spring Boot backend. UZD Cars was built in 2022 using PHP, plain HTML and CSS. Updated project YAML, both briefs, skills and resume; source locations and demo evidence remain pending.
 
 Latest clarification, 2026-11-18: Minalu confirms more than five years of hands-on Java and Spring Boot development, beginning in his second year of university. Profile YAML, skills and the master resume record this separately from employment tenure. The earlier four-year estimate is superseded; do not reduce Java/Spring Boot experience to post-graduation employment or apply this tenure to every stack.

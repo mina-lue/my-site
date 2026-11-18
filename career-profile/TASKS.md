@@ -4,6 +4,8 @@ Updated 2026-11-18. This is the portable record of pending work. User-supplied f
 
 ## Completed
 
+- [x] Correct professional email to minaluemesele@gmail.com in the saved profile and MoneyGram resume (2026-11-18).
+
 - [x] Record Hodiye Shop (2021, Kotlin and Spring Boot) and UZD Cars (2022, PHP, plain HTML and CSS), confirmed 2026-11-18.
 
 - [x] Record the 2026-11-18 clarification: more than five years of hands-on Java/Spring Boot development since the second year of university, including university and independent work, separate from employment tenure.
