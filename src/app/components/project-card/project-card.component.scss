@@ -32,6 +32,12 @@
   filter: saturate(0.92);
 }
 
+.media-wrap img.image-contain {
+  object-fit: contain;
+  object-position: center;
+  background: #111827;
+}
+
 .copy-wrap {
   padding: 1rem;
 }

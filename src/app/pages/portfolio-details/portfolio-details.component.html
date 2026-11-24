@@ -1,24 +1,26 @@
 <section class="section-shell portfolio-details fade-up" *ngIf="project; else notFound">
   <button type="button" class="back-link" (click)="goBack()">&#8592; Back</button>
 
-  <div class="hero glass-card">
-    <img [src]="project.imageUrl" [alt]="project.title + ' preview'" />
+  <div class="hero glass-card" [class.hero--text]="!project.imageUrl">
+    <img *ngIf="project.imageUrl as imageUrl" [src]="imageUrl"
+      [class.image-contain]="project.imageFit === 'contain'" [alt]="project.title + ' preview'" />
     <div class="hero-copy">
       <p class="year" *ngIf="project.year">{{ project.year }}</p>
       <h1>{{ project.title }}</h1>
       <p>{{ project.overview || project.description }}</p>
+      <p *ngIf="project.technologies?.length">{{ project.technologies?.join(' · ') }}</p>
       <a *ngIf="project.link" [href]="project.link" target="_blank" rel="noopener noreferrer">Open live preview</a>
     </div>
   </div>
 
-  <div class="details-grid">
-    <article class="glass-card detail-card">
+  <div class="details-grid" *ngIf="project.problemStatement || project.solutionApproach || project.highlights?.length">
+    <article class="glass-card detail-card" *ngIf="project.problemStatement || project.solutionApproach">
       <h2>Problem & Approach</h2>
-      <p class="detail-copy">{{ project.problemStatement || project.description }}</p>
+      <p class="detail-copy" *ngIf="project.problemStatement">{{ project.problemStatement }}</p>
       <p class="detail-copy" *ngIf="project.solutionApproach">{{ project.solutionApproach }}</p>
     </article>
 
-    <article class="glass-card detail-card">
+    <article class="glass-card detail-card" *ngIf="project.highlights?.length">
       <h2>Highlights</h2>
       <ul>
         <li *ngFor="let item of project.highlights || []">{{ item }}</li>

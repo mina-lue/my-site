@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ProjectCardComponent } from "../../components/project-card/project-card.component"
 import { CommonModule } from '@angular/common';
 import { Project, ProjectCategory } from '../../model/Project';
@@ -14,7 +14,7 @@ type PortfolioCategoryFilter = 'all' | ProjectCategory;
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
   @Input() previewMode = false;
 
   readonly projects: Project[] = PORTFOLIO_ITEMS;
@@ -24,22 +24,14 @@ export class ProjectsComponent implements OnInit {
     { value: 'fun', label: 'Fun' },
     { value: 'learning', label: 'Learning' }
   ];
-  readonly previewVisibleCount = 4;
-  readonly fullInitialVisibleCount = 4;
-  readonly loadMoreStep = 2;
 
   selectedCategory: PortfolioCategoryFilter = 'all';
   selectedTechnology = 'all';
-  visibleCount = this.fullInitialVisibleCount;
 
   constructor(
     private readonly location: Location,
     private readonly router: Router
   ) {}
-
-  ngOnInit(): void {
-    this.visibleCount = this.previewMode ? this.previewVisibleCount : this.fullInitialVisibleCount;
-  }
 
   get technologyFilters(): string[] {
     const values = new Set<string>();
@@ -55,9 +47,9 @@ export class ProjectsComponent implements OnInit {
     return [...this.projects].sort((left, right) => Number(Boolean(right.isFlagship)) - Number(Boolean(left.isFlagship)));
   }
 
-  get filteredProjects(): Project[] {
+  get visibleProjects(): Project[] {
     if (this.previewMode) {
-      return this.orderedProjects;
+      return this.orderedProjects.filter((project) => project.isFlagship);
     }
 
     return this.orderedProjects.filter((project) => {
@@ -68,20 +60,11 @@ export class ProjectsComponent implements OnInit {
     });
   }
 
-  get visibleProjects(): Project[] {
-    return this.filteredProjects.slice(0, this.visibleCount);
-  }
-
-  get hasMoreProjects(): boolean {
-    return this.visibleProjects.length < this.filteredProjects.length;
-  }
-
   setCategoryFilter(category: PortfolioCategoryFilter): void {
     if (this.previewMode) {
       return;
     }
     this.selectedCategory = category;
-    this.visibleCount = this.fullInitialVisibleCount;
   }
 
   setTechnologyFilter(technology: string): void {
@@ -89,11 +72,6 @@ export class ProjectsComponent implements OnInit {
       return;
     }
     this.selectedTechnology = technology;
-    this.visibleCount = this.fullInitialVisibleCount;
-  }
-
-  loadMore(): void {
-    this.visibleCount += this.loadMoreStep;
   }
 
   goBack(): void {

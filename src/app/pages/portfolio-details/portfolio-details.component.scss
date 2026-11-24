@@ -24,11 +24,20 @@
   padding: 0.9rem;
 }
 
+.hero--text {
+  grid-template-columns: 1fr;
+}
+
 .hero img {
   width: 100%;
   height: min(420px, 60vw);
   object-fit: cover;
   border-radius: 0.8rem;
+}
+
+.hero img.image-contain {
+  object-fit: contain;
+  background: #111827;
 }
 
 .hero-copy {
@@ -66,6 +75,10 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.details-grid > :only-child {
+  grid-column: 1 / -1;
 }
 
 .details-grid--triple {

@@ -6,6 +6,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'portfolio', component: ProjectsComponent },
+  { path: 'portfolio/kello-school-platform', redirectTo: 'portfolio/timo-school-platform', pathMatch: 'full' },
   { path: 'portfolio/:slug', component: PortfolioDetailsComponent },
   { path: '**', redirectTo: '' }
 ];

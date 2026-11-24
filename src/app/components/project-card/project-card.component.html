@@ -1,7 +1,7 @@
 <article class="glass-card project-card">
-  <div class="media-wrap">
+  <div class="media-wrap" *ngIf="project?.imageUrl as imageUrl">
     <span class="flagship-badge" *ngIf="project?.isFlagship">Flagship</span>
-    <img [src]="project?.imageUrl" [alt]="project?.title || 'Project image'" />
+    <img [src]="imageUrl" [class.image-contain]="project?.imageFit === 'contain'" [alt]="project?.title || 'Project image'" />
   </div>
 
   <div class="copy-wrap">

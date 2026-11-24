@@ -28,7 +28,8 @@ export interface Project {
   title: string;
   category: ProjectCategory;
   description: string;
-  imageUrl: string;
+  imageUrl?: string;
+  imageFit?: 'contain';
   overview?: string;
   technologies?: string[];
   highlights?: string[];
