@@ -63,12 +63,16 @@
   line-height: 1.65;
 }
 
-.hero-copy a {
-  display: inline-block;
-  margin-top: 1rem;
+.hero-copy a,
+.not-found a {
   color: #ffe4dc;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 228, 220, 0.65);
+}
+
+.hero-copy a {
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 .details-grid {
@@ -108,16 +112,22 @@
   line-height: 1.6;
 }
 
-.layer-grid {
+.layer-grid,
+.flow-list {
   margin-top: 0.8rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.8rem;
 }
 
-.layer-card {
+.layer-card,
+.fact-row,
+.flow-step {
   border: 1px solid rgba(153, 205, 218, 0.28);
   border-radius: 0.9rem;
+}
+
+.layer-card {
   padding: 0.7rem;
   background: rgba(13, 35, 44, 0.54);
 }
@@ -162,7 +172,6 @@
 }
 
 .fact-row {
-  border: 1px solid rgba(153, 205, 218, 0.28);
   border-radius: 0.8rem;
   padding: 0.6rem 0.7rem;
   background: rgba(13, 35, 44, 0.48);
@@ -183,16 +192,7 @@
   line-height: 1.5;
 }
 
-.flow-list {
-  margin-top: 0.8rem;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.8rem;
-}
-
 .flow-step {
-  border: 1px solid rgba(153, 205, 218, 0.28);
-  border-radius: 0.9rem;
   padding: 0.75rem;
   background: rgba(13, 35, 44, 0.52);
 }
@@ -241,19 +241,12 @@
   display: block;
 }
 
-.gallery-item--web img {
-  aspect-ratio: 16 / 10;
-}
-
 .gallery-item--web {
   grid-column: span 6;
 }
 
 .gallery-item--mobile {
   grid-column: span 3;
-  width: 100%;
-  max-width: none;
-  justify-self: stretch;
   border-radius: 1.2rem;
   border-color: rgba(255, 170, 118, 0.42);
   background: linear-gradient(180deg, rgba(28, 26, 34, 0.75), rgba(13, 35, 44, 0.6));
@@ -263,7 +256,6 @@
 .gallery-item--mobile img {
   height: auto;
   aspect-ratio: 9 / 19.5;
-  object-fit: cover;
 }
 
 .gallery-item figcaption {
@@ -287,12 +279,6 @@
   color: var(--text-muted);
 }
 
-.not-found a {
-  color: #ffe4dc;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255, 228, 220, 0.65);
-}
-
 @media (max-width: 1000px) {
   .details-grid--triple {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -304,7 +290,6 @@
 
   .gallery-item--mobile {
     grid-column: span 4;
-    max-width: none;
   }
 }
 
@@ -328,6 +313,5 @@
   .gallery-item--web,
   .gallery-item--mobile {
     grid-column: span 1;
-    max-width: none;
   }
 }
