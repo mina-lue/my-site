@@ -8,12 +8,20 @@ export const PORTFOLIO_ITEMS: Project[] = [
     isFlagship: true,
     year: 2026,
     description: 'A school management platform with an Angular web portal and a React Native mobile app.',
-    imageUrl: 'portfolio-media/timo-mobile.png',
+    imageUrl: 'portfolio-media/timo-dashboard.png',
     imageFit: 'contain',
     overview: 'Timo brings school administration and workflows for teachers, students, and parents into a multi-tenant web and mobile platform.',
     technologies: ['Angular', 'React Native', 'Spring Boot', 'PostgreSQL', 'Expo'],
     proofChips: ['300+ mobile installs', 'Web and mobile'],
     highlights: ['Multi-tenant school administration', 'Web and mobile workflows for schools'],
+    mediaGallery: [
+      {
+        src: 'portfolio-media/timo-mobile.png',
+        alt: 'Timo School System sign-in screen on Android',
+        caption: 'React Native mobile app sign-in screen.',
+        kind: 'mobile'
+      }
+    ],
     impactPoints: ['The Android app reached 300+ installs in under three months after publication on Google Play.'],
     roleOwnership: ['Built across the Angular web app, React Native mobile app, and Spring Boot backend.', 'Published the Android app on Google Play.']
   },
