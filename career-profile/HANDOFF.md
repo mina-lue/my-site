@@ -1,6 +1,6 @@
 # Resume this work
 
-Website synchronization, 2026-11-24. Updated the Angular source with four flagship projects on the homepage, all seven selected projects on the portfolio page, and corrected employment history. Verified the production build in a browser. Firebase Hosting rejected the signed-in account for the `minalu` project, so the updated site still needs deployment and live verification.
+Website synchronization, 2026-11-24. Updated the Angular source with four flagship projects on the homepage, all seven selected projects on the portfolio page, and corrected employment history. Verified the production build in a browser. Firebase Hosting rejected both signed-in accounts for the `minalu` project, so the updated site still needs deployment and live verification.
 
 Perago employment correction, 2026-11-24. Minalu worked as an Angular Developer from September 2022 through July 2025 and began the role while studying software engineering at Arba Minch University.
 
