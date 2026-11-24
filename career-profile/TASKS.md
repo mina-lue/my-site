@@ -27,7 +27,7 @@ Updated 2026-11-24. This is the portable record of pending work. User-supplied f
 - [ ] Implement and verify the [inventory refresh](plans/inventory-refresh.md).
 - [x] Synchronize the Angular homepage, employment history, and seven portfolio entries with the profile. The homepage shows four flagship projects and the portfolio page shows all seven, flagship projects first.
 - [x] Replace outdated website project claims with checked stack and release facts in the Angular source.
-- [ ] Publish and verify the updated Angular build on Firebase Hosting. Both signed-in Firebase CLI accounts lacked access to the `minalu` project.
+- [x] Publish and verify the updated Angular build on Firebase Hosting (2026-11-24).
 - [ ] Add project screenshots, demo walkthroughs and public links as available.
 
 ## Node.js practice

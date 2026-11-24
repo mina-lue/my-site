@@ -1,6 +1,6 @@
 # Resume this work
 
-Website synchronization, 2026-11-24. Updated the Angular source with four flagship projects on the homepage, all seven selected projects on the portfolio page, and corrected employment history. Verified the production build in a browser. Firebase Hosting rejected both signed-in accounts for the `minalu` project, so the updated site still needs deployment and live verification.
+Website synchronization, 2026-11-24. Minalu deployed the updated Angular site to Firebase Hosting. Browser checks on the live site verified four flagship projects on the homepage, all seven selected projects in order on the portfolio page, and the corrected employment history. Project filtering, images, detail pages, the legacy Kello link, and the mobile layout also passed.
 
 Perago employment correction, 2026-11-24. Minalu worked as an Angular Developer from September 2022 through July 2025 and began the role while studying software engineering at Arba Minch University.
 
@@ -33,7 +33,7 @@ The profile direction is settled: Node.js, Express.js, NestJS, React and Angular
 ## Continue with
 
 1. For a job application, supply the full job description and follow the application workflow in README.md. Preparation creates context; an agent still writes the tailored documents. Submission follows the user's instruction for that specific job.
-2. For portfolio improvements, publish and verify the updated Angular website on Firebase Hosting, then implement the scoped inventory refresh.
+2. For the next portfolio improvement, implement the scoped inventory refresh.
 3. For new information, update the relevant YAML, resume and brief; regenerate the JSON export, validate, commit and push.
 4. Use TASKS.md for evidence gaps and the November-December Node.js practice plan. Keep planned work separate from delivered experience.
 
