@@ -21,8 +21,9 @@ Addis Ababa | December 2025–Present
 - Contributed to Garri Asset Management, built with Next.js.
 
 ### Perago Information Systems — Angular Developer
-Addis Ababa | September 2024–June 2025
+Addis Ababa | September 2022–July 2025
 
+- Began working at Perago while studying software engineering at Arba Minch University.
 - Contributed bug fixes and features to an electronic procurement platform serving more than three African countries.
 - Worked with Angular and NestJS; used NgRx with a facade layer between application state and the UI.
 - Collaborated with the development team using Docker, Git, and GitLab workflows.

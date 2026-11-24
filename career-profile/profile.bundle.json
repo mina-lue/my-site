@@ -102,9 +102,10 @@
         "company": "Perago Information Systems",
         "title": "Angular Developer",
         "location": "Addis Ababa",
-        "start": "2024-09",
-        "end": "2025-06",
+        "start": "2022-09",
+        "end": "2025-07",
         "employment_type": "Full-time, permanent",
+        "education_overlap": "Began working at Perago while studying software engineering at Arba Minch University.",
         "responsibilities": [
           "Contributed bug fixes and features to an electronic procurement system serving more than three countries in Africa.",
           "Worked with Angular and NestJS in a collaborative development team.",
@@ -128,7 +129,7 @@
           "Ant Design"
         ],
         "claim_boundary": "Country footprint describes the platform; do not imply personally deploying it in every country.",
-        "evidence_source": "User report and clarifications, 2026-11-16; existing profile retained for dates and formal titles."
+        "evidence_source": "User report and clarifications, 2026-11-16; dates and university overlap corrected by the user on 2026-11-24. Formal title retained from the existing profile."
       }
     ]
   },

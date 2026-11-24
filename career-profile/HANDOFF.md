@@ -1,5 +1,7 @@
 # Resume this work
 
+Perago employment correction, 2026-11-24. Minalu worked as an Angular Developer from September 2022 through July 2025 and began the role while studying software engineering at Arba Minch University.
+
 Contact correction, 2026-11-18: professional email is minaluemesele@gmail.com. Updated authoritative profile, master resume and the local MoneyGram resume. Use this address for future applications.
 
 Project clarification, 2026-11-18: Hodiye Shop was built in 2021 using Kotlin with a Spring Boot backend. UZD Cars was built in 2022 using PHP, plain HTML and CSS. Updated project YAML, both briefs, skills and resume; source locations and demo evidence remain pending.

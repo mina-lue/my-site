@@ -1,8 +1,10 @@
 # Profile and portfolio task board
 
-Updated 2026-11-18. This is the portable record of pending work. User-supplied facts can be added whenever available; missing optional evidence does not block drafting a truthful application.
+Updated 2026-11-24. This is the portable record of pending work. User-supplied facts can be added whenever available; missing optional evidence does not block drafting a truthful application.
 
 ## Completed
+
+- [x] Correct Perago employment to September 2022–July 2025 and record that the role began while at university (2026-11-24).
 
 - [x] Correct professional email to minaluemesele@gmail.com in the saved profile and MoneyGram resume (2026-11-18).
 
